@@ -6,15 +6,15 @@ A responsive personal portfolio for Jon Zhang, a GenAI and full-stack engineer.
 
 ## Architecture
 
-![Hand-drawn architecture diagram showing the browser, static portfolio, GitHub integration, hosting, and source repository](docs/architecture.svg)
+![Hand-drawn architecture diagram showing the browser, static portfolio, profile links, hosting, and source repository](docs/architecture.svg)
 
-The portfolio is a dependency-free static site. Its JavaScript enriches the page at runtime with public GitHub activity, while the same committed source is published to ChatGPT Sites and mirrored to GitHub.
+The portfolio is a dependency-free static site. Its JavaScript powers the time-of-day theme and small interactions, while the same committed source is published to ChatGPT Sites and mirrored to GitHub.
 
 ## Features
 
 - Time-of-day sky theme with an interactive hour selector
 - Selected projects and resume-backed experience
-- Live weekly public activity from the GitHub Events API
+- Direct links to GitHub, LinkedIn, Instagram, and Google Calendar
 - Responsive layouts for desktop and mobile
 - Static, dependency-free HTML, CSS, and JavaScript
 
@@ -32,6 +32,6 @@ Then open `http://localhost:4173`.
 
 - `dist/index.html` — page content
 - `dist/styles.css` — visual system and responsive layout
-- `dist/app.js` — theme controls, interactions, and GitHub activity
+- `dist/app.js` — theme controls and interactions
 - `dist/assets/logos` — local brand assets
 - `docs/architecture.svg` — architecture overview
