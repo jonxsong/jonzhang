@@ -13,7 +13,8 @@ The portfolio is a dependency-free static site. Its JavaScript powers the time-o
 ## Features
 
 - Time-of-day sky theme with an interactive hour selector
-- Selected projects and resume-backed experience
+- Click-to-expand, resume-backed company experience profiles
+- Interactive life roadmap with milestone stories and visual chapters
 - Direct links to GitHub, LinkedIn, Instagram, and Google Calendar
 - Responsive layouts for desktop and mobile
 - Static, dependency-free HTML, CSS, and JavaScript

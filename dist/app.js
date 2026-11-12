@@ -100,6 +100,45 @@ document.querySelectorAll(".placeholder-link").forEach((button) => {
   });
 });
 
+const experienceEntries = document.querySelectorAll(".experience-entry");
+experienceEntries.forEach((entry) => {
+  entry.addEventListener("toggle", () => {
+    if (!entry.open) return;
+    experienceEntries.forEach((other) => {
+      if (other !== entry) other.open = false;
+    });
+  });
+});
+
+const roadmapTabs = Array.from(document.querySelectorAll(".roadmap-tab"));
+const roadmapPanels = Array.from(document.querySelectorAll(".roadmap-panel"));
+
+function openRoadmap(key) {
+  roadmapTabs.forEach((tab) => {
+    const selected = tab.dataset.roadmap === key;
+    tab.classList.toggle("active", selected);
+    tab.setAttribute("aria-selected", String(selected));
+    tab.tabIndex = selected ? 0 : -1;
+  });
+  roadmapPanels.forEach((panel) => {
+    const selected = panel.dataset.panel === key;
+    panel.classList.toggle("active", selected);
+    panel.hidden = !selected;
+  });
+}
+
+roadmapTabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => openRoadmap(tab.dataset.roadmap));
+  tab.addEventListener("keydown", (event) => {
+    if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(event.key)) return;
+    event.preventDefault();
+    const direction = event.key === "ArrowRight" || event.key === "ArrowDown" ? 1 : -1;
+    const next = roadmapTabs[(index + direction + roadmapTabs.length) % roadmapTabs.length];
+    openRoadmap(next.dataset.roadmap);
+    next.focus();
+  });
+});
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
