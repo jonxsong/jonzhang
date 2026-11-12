@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 170" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" role="img" aria-labelledby="title desc">
   <title id="title">University of California, San Diego</title>
-  <desc id="desc">University name rendered in navy with a gold rule.</desc>
-  <rect width="720" height="170" rx="18" fill="#ffffff"/>
-  <text x="34" y="72" fill="#182b49" font-family="Georgia, 'Times New Roman', serif" font-size="42" letter-spacing="-.8">University of California,</text>
-  <text x="34" y="125" fill="#182b49" font-family="Georgia, 'Times New Roman', serif" font-size="51" letter-spacing="-.9">San Diego</text>
-  <path d="M36 145H684" stroke="#c69214" stroke-width="8" stroke-linecap="square"/>
+  <desc id="desc">University name rendered as a single horizontal wordmark in navy with a gold rule.</desc>
+  <text x="20" y="76" fill="#182b49" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500" letter-spacing="-1">University of California, San Diego</text>
+  <path d="M22 96H878" stroke="#c69214" stroke-width="7" stroke-linecap="square"/>
 </svg>
