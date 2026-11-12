@@ -113,49 +113,83 @@ document.querySelectorAll(".reveal").forEach((el, index) => {
   observer.observe(el);
 });
 
-const dialog = document.querySelector("#game-dialog");
-const field = document.querySelector("#game-field");
-const signal = document.querySelector("#signal");
-const scoreEl = document.querySelector("#score");
-const timerEl = document.querySelector("#timer");
-let gameTimer;
-let score = 0;
-let time = 30;
-let active = false;
-
-function moveSignal() {
-  signal.style.left = `${10 + Math.random() * 80}%`;
-  signal.style.top = `${15 + Math.random() * 70}%`;
+function pacificDateParts(date = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).formatToParts(date);
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return { year: Number(values.year), month: Number(values.month), day: Number(values.day) };
 }
 
-function endGame() {
-  active = false;
-  clearInterval(gameTimer);
-  showToast(`Signal Chase complete — ${score} signals caught.`);
+function localDateKey(date) {
+  const { year, month, day } = pacificDateParts(date);
+  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 }
 
-function startGame() {
-  clearInterval(gameTimer);
-  score = 0;
-  time = 30;
-  active = true;
-  scoreEl.textContent = score;
-  timerEl.textContent = time;
-  moveSignal();
-  gameTimer = setInterval(() => {
-    time -= 1;
-    timerEl.textContent = time;
-    if (time <= 0) endGame();
-  }, 1000);
+function dateKey(date) {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
 }
 
-signal.addEventListener("click", () => {
-  if (!active) return;
-  score += 1;
-  scoreEl.textContent = score;
-  moveSignal();
-});
-document.querySelector("#game-button").addEventListener("click", () => dialog.showModal());
-document.querySelector("#game-close").addEventListener("click", () => { endGame(); dialog.close(); });
-document.querySelector("#game-start").addEventListener("click", startGame);
-dialog.addEventListener("click", (event) => { if (event.target === dialog) { endGame(); dialog.close(); } });
+function contributionWeight(event) {
+  if (event.type === "PushEvent") return Math.max(event.payload?.commits?.length || 0, 1);
+  return ["PullRequestEvent", "IssuesEvent", "IssueCommentEvent", "CreateEvent", "ReleaseEvent", "PullRequestReviewEvent"].includes(event.type) ? 1 : 0;
+}
+
+async function loadGithubActivity() {
+  const todayParts = pacificDateParts();
+  const today = new Date(todayParts.year, todayParts.month - 1, todayParts.day);
+  const monday = new Date(today);
+  const dayOffset = (today.getDay() + 6) % 7;
+  monday.setDate(today.getDate() - dayOffset);
+  const weekDates = Array.from({ length: 7 }, (_, index) => {
+    const date = new Date(monday);
+    date.setDate(monday.getDate() + index);
+    return date;
+  });
+  const sunday = weekDates[6];
+  const month = new Intl.DateTimeFormat("en-US", { month: "short" });
+  const range = monday.getMonth() === sunday.getMonth()
+    ? `${month.format(monday).toUpperCase()} ${monday.getDate()}—${sunday.getDate()}`
+    : `${month.format(monday).toUpperCase()} ${monday.getDate()}—${month.format(sunday).toUpperCase()} ${sunday.getDate()}`;
+  document.querySelector("#week-label").textContent = `WEEK OF ${range}`;
+
+  const counts = Object.fromEntries(weekDates.map((date) => [dateKey(date), 0]));
+  try {
+    const response = await fetch("https://api.github.com/users/jonxsong/events/public?per_page=100", {
+      headers: { Accept: "application/vnd.github+json" }
+    });
+    if (!response.ok) throw new Error(`GitHub returned ${response.status}`);
+    const events = await response.json();
+    events.forEach((event) => {
+      const key = localDateKey(new Date(event.created_at));
+      if (key in counts) counts[key] += contributionWeight(event);
+    });
+
+    const values = weekDates.map((date) => counts[dateKey(date)]);
+    const max = Math.max(...values, 1);
+    const dayElements = document.querySelectorAll("#week-chart .day");
+    dayElements.forEach((element, index) => {
+      const date = weekDates[index];
+      const count = values[index];
+      const isFuture = date > today;
+      element.style.setProperty("--level", `${isFuture ? 8 : 8 + (count / max) * 82}%`);
+      element.classList.toggle("today", dateKey(date) === dateKey(today));
+      element.classList.toggle("future", isFuture);
+      element.querySelector("small").textContent = isFuture ? "—" : count;
+    });
+
+    const total = values.reduce((sum, value) => sum + value, 0);
+    const activeDays = values.filter((value) => value > 0).length;
+    document.querySelector("#activity-total").textContent = total;
+    document.querySelector("#activity-copy").innerHTML = `public contribution${total === 1 ? "" : "s"}<br />across ${activeDays} active day${activeDays === 1 ? "" : "s"}`;
+    document.querySelector("#week-chart").setAttribute("aria-label", `${total} public GitHub contributions this week across ${activeDays} active days`);
+  } catch (error) {
+    document.querySelector("#activity-copy").innerHTML = "public activity unavailable<br />visit the GitHub profile";
+    document.querySelector(".activity-card .live-dot").classList.add("offline");
+  }
+}
+
+loadGithubActivity();
