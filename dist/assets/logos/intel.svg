@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 150" role="img" aria-labelledby="title desc">
+  <title id="title">Intel Corporation</title>
+  <desc id="desc">Intel wordmark in blue.</desc>
+  <rect width="360" height="150" rx="18" fill="#ffffff"/>
+  <g fill="#0068b5">
+    <circle cx="75" cy="49" r="10"/>
+    <path d="M65 68h20v48H65z"/>
+    <path d="M100 68h19v7c7-6 15-9 25-9 20 0 31 12 31 34v16h-20V99c0-11-5-16-15-16-11 0-21 8-21 23v10h-19z"/>
+    <path d="M190 52h20v16h18v16h-18v12c0 6 3 9 10 9 3 0 6-1 9-2v15c-5 2-10 3-16 3-15 0-23-8-23-23V84h-12V68h12z"/>
+    <path d="M260 66c25 0 40 16 40 40v6h-58c3 8 11 12 21 12 9 0 16-3 23-9l11 12c-9 9-20 14-35 14-25 0-42-15-42-38 0-22 17-37 40-37zm19 31c-2-8-9-13-19-13-9 0-16 5-19 13z"/>
+    <path d="M309 43h20v73h-20z"/>
+  </g>
+</svg>
