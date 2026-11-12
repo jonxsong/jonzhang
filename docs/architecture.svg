@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Jon Zhang portfolio architecture</title>
+  <desc id="desc">A hand-drawn style diagram showing the visitor browser, static portfolio files, GitHub Events API, ChatGPT Sites hosting, and GitHub source repository.</desc>
+  <defs>
+    <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.25"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#20242c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .box{fill:#fffef9;stroke:#20242c;stroke-width:2.2;filter:url(#rough)}
+      .accent{fill:#e9efff;stroke:#3568ff}.warm{fill:#fff0d9;stroke:#e08a35}.mint{fill:#e7f7f2;stroke:#269985}
+      .line{fill:none;stroke:#20242c;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow);filter:url(#rough)}
+      .dash{fill:none;stroke:#7b8492;stroke-width:1.5;stroke-dasharray:7 7;filter:url(#rough)}
+      text{font-family:"Comic Sans MS","Segoe Print",sans-serif;fill:#20242c}.label{font-size:20px;font-weight:700}.small{font-size:14px;fill:#56606f}.tiny{font-size:12px;fill:#687382}
+    </style>
+  </defs>
+  <rect width="960" height="420" rx="24" fill="#fbfaf5"/>
+  <path class="dash" d="M30 34 C190 18 333 48 480 27 S769 46 927 27"/>
+  <text x="38" y="58" class="small">Jon Zhang portfolio / system map</text>
+
+  <rect class="box accent" x="44" y="145" width="170" height="112" rx="18"/>
+  <text x="129" y="188" text-anchor="middle" class="label">Visitor</text>
+  <text x="129" y="215" text-anchor="middle" class="small">desktop + mobile</text>
+  <path d="M79 238q50 13 100 0" fill="none" stroke="#3568ff" stroke-width="2" stroke-linecap="round"/>
+
+  <rect class="box" x="302" y="104" width="296" height="198" rx="21"/>
+  <text x="450" y="143" text-anchor="middle" class="label">Static portfolio</text>
+  <rect class="box accent" x="329" y="164" width="74" height="64" rx="12"/>
+  <rect class="box warm" x="413" y="164" width="74" height="64" rx="12"/>
+  <rect class="box mint" x="497" y="164" width="74" height="64" rx="12"/>
+  <text x="366" y="192" text-anchor="middle" class="small">HTML</text>
+  <text x="450" y="192" text-anchor="middle" class="small">CSS</text>
+  <text x="534" y="192" text-anchor="middle" class="small">JS</text>
+  <text x="366" y="211" text-anchor="middle" class="tiny">content</text>
+  <text x="450" y="211" text-anchor="middle" class="tiny">visuals</text>
+  <text x="534" y="211" text-anchor="middle" class="tiny">runtime</text>
+  <text x="450" y="263" text-anchor="middle" class="small">time theme · responsive UI · local logos</text>
+
+  <rect class="box mint" x="690" y="72" width="222" height="92" rx="18"/>
+  <text x="801" y="108" text-anchor="middle" class="label">GitHub API</text>
+  <text x="801" y="134" text-anchor="middle" class="small">weekly public activity</text>
+
+  <rect class="box warm" x="690" y="207" width="222" height="92" rx="18"/>
+  <text x="801" y="244" text-anchor="middle" class="label">ChatGPT Sites</text>
+  <text x="801" y="270" text-anchor="middle" class="small">private production host</text>
+
+  <rect class="box accent" x="365" y="340" width="260" height="60" rx="16"/>
+  <text x="495" y="367" text-anchor="middle" class="label">GitHub repository</text>
+  <text x="495" y="387" text-anchor="middle" class="tiny">jonxsong / jonzhang</text>
+
+  <path class="line" d="M214 199 C247 198 266 198 302 199"/>
+  <path class="line" d="M598 164 C633 140 650 122 690 118"/>
+  <path class="line" d="M598 244 C635 247 654 250 690 251"/>
+  <path class="line" d="M451 302 C450 319 466 330 483 340"/>
+  <path class="line" d="M625 370 C716 368 791 347 801 300"/>
+
+  <text x="239" y="184" class="tiny">loads</text>
+  <text x="620" y="125" class="tiny">fetch</text>
+  <text x="623" y="237" class="tiny">deploy</text>
+  <text x="404" y="326" class="tiny">commit</text>
+</svg>
