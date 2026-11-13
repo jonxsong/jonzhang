@@ -41,7 +41,7 @@
 
   <rect class="box mint" x="690" y="72" width="222" height="92" rx="18"/>
   <text x="801" y="108" text-anchor="middle" class="label">External links</text>
-  <text x="801" y="134" text-anchor="middle" class="small">social + résumé + Omnigaze</text>
+  <text x="801" y="134" text-anchor="middle" class="small">social + résumé + live apps</text>
 
   <rect class="box warm" x="690" y="207" width="222" height="92" rx="18"/>
   <text x="801" y="244" text-anchor="middle" class="label">ChatGPT Sites</text>

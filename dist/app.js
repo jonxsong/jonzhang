@@ -93,10 +93,14 @@ document.querySelectorAll(".meeting-button").forEach((button) => {
   });
 });
 
-document.querySelectorAll(".placeholder-link").forEach((button) => {
-  button.addEventListener("click", () => {
-    const label = button.dataset.label || "This link";
-    showToast(`${label} is ready to connect.`);
+const projectEntries = document.querySelectorAll(".project-entry");
+projectEntries.forEach((entry) => {
+  entry.addEventListener("toggle", () => {
+    if (!entry.open) return;
+    projectEntries.forEach((other) => {
+      if (other !== entry) other.open = false;
+    });
+    requestAnimationFrame(() => entry.scrollIntoView({ behavior: "smooth", block: "start" }));
   });
 });
 

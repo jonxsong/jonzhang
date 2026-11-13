@@ -30,7 +30,7 @@ This portfolio is designed as a narrative, not a résumé pasted into a webpage.
 | Chapter | What visitors can explore |
 | --- | --- |
 | **Work experience** | Expandable company profiles with role, period, team, location, context, and highlights |
-| **Selected work** | A live Omnigaze showcase with a direct path to the deployed product |
+| **Selected work** | Clickable Omnigaze and Afterglow case studies with live-product and source links |
 | **Life roadmap** | Clickable milestones connecting education, internships, engineering roles, and the current GenAI chapter |
 | **Personal links** | Instagram, Facebook, LinkedIn, GitHub, résumé, and meeting links with visual previews |
 | **Atmosphere** | A 24-hour interactive sky that shifts the page palette from sunrise through night |
@@ -58,7 +58,7 @@ The committed `dist/` directory is the product. HTML owns the content and semant
 Visitor
    │
    ▼
-Static portfolio ──────► Social profiles · Résumé · Omnigaze
+Static portfolio ──────► Social profiles · Résumé · Live apps
    │
    ├── index.html      content + structure
    ├── styles.css      visual system + responsive layout
@@ -101,6 +101,7 @@ jon-portfolio/
 
 - **Portfolio:** [jon-zhang-portfolio-2026.perkyaisle4.chatgpt.site](https://jon-zhang-portfolio-2026.perkyaisle4.chatgpt.site)
 - **Omnigaze:** [omnigaze.perkyaisle4.chatgpt.site](https://omnigaze.perkyaisle4.chatgpt.site)
+- **Afterglow:** [afterglow-sky-forecast.perkyaisle4.chatgpt.site](https://afterglow-sky-forecast.perkyaisle4.chatgpt.site)
 - **GitHub:** [github.com/jonxsong](https://github.com/jonxsong)
 - **LinkedIn:** [linkedin.com/in/jonxsong](https://www.linkedin.com/in/jonxsong/)
 
