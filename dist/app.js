@@ -437,7 +437,6 @@ projectEntries.forEach((entry) => {
   });
 });
 
-const reducedProjectMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const marketSignal = document.querySelector("[data-market-signal]");
 const winProbability = document.querySelector("[data-win-probability]");
 const winBar = document.querySelector("[data-win-bar]");
@@ -467,7 +466,7 @@ function advanceProjectMetrics() {
   if (orbitBar) orbitBar.style.width = `${orbitValue}%`;
 }
 
-if (!reducedProjectMotion.matches) window.setInterval(advanceProjectMetrics, 2200);
+window.setInterval(advanceProjectMetrics, 2200);
 
 const experienceEntries = document.querySelectorAll(".experience-entry");
 experienceEntries.forEach((entry) => {

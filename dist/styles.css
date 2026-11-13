@@ -229,4 +229,24 @@ body.night { --ink:#f5f7ff; --muted:#9aa7bc; --paper:#080c15; --panel:rgba(17,27
   .experience-entry summary{grid-template-columns:28px 62px 1fr 32px;gap:12px;padding:14px 8px}.brand-mark{width:58px;height:46px}.experience-date{grid-column:3;text-align:left}.experience-toggle{grid-column:4;grid-row:1/3}.experience-panel{grid-template-columns:1fr;padding:16px}.company-visual{min-height:230px}.roadmap-shell{grid-template-columns:1fr}.roadmap-nav{display:flex;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line);padding:10px}.roadmap-tab{min-width:190px}.roadmap-tab::after{display:none}.roadmap-panel{grid-template-columns:1fr;min-height:0}.roadmap-story{min-height:390px;padding:32px 24px}.roadmap-story h3{margin-top:38px}.roadmap-gallery{min-height:420px}.footer-bottom{grid-template-columns:1fr;gap:10px}
 }
 @media (max-width: 480px) { .utility-nav{gap:5px}.icon-button{width:36px;height:36px}.link-preview{top:50px;width:244px;transform-origin:top center}.utility-nav>.preview-link:nth-child(2) .link-preview{right:-164px}.utility-nav>.preview-link:nth-child(3) .link-preview{right:-123px}.utility-nav>.preview-link:nth-child(4) .link-preview{right:-82px}.utility-nav>.preview-link:nth-child(5) .link-preview{right:-41px}.utility-nav>.preview-link:nth-child(6) .link-preview{right:0}.hero-copy{font-size:20px}.project-preview{min-height:220px}.project-teaser{min-height:220px;padding:20px 18px 16px}.project-name{font-size:34px}.project-detail{padding:20px 18px}.project-detail-actions{flex-direction:column}.project-detail-actions .button{width:100%}.experience-entry summary{grid-template-columns:22px 52px 1fr 28px;gap:9px}.brand-mark{width:50px;height:42px}.experience-main strong{font-size:16px}.experience-facts{grid-template-columns:1fr}.experience-facts>div,.experience-facts>div:nth-child(-n+2){border-top:1px solid var(--line)}.experience-facts>div:first-child{border-top:0}.experience-facts .wide{grid-column:auto}.company-visual{min-height:200px}.roadmap-photo-main{inset:34px 22px 90px 22px}.roadmap-photo-note{width:160px;height:130px;right:12px;bottom:20px}.roadmap-gallery{min-height:360px} }
-@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+
+  /* Project previews are deliberately ambient product demos. Keep them alive
+     under reduced-motion, but use their slow, bounded loops instead of adding
+     scroll or entrance movement elsewhere on the page. */
+  .mini-bars i{animation-duration:3.2s!important;animation-iteration-count:infinite!important}
+  .omnigaze-orbit em{animation-duration:8s!important;animation-iteration-count:infinite!important}
+  .afterglow-sky-cycle::after,.afterglow-sun{animation-duration:28s!important;animation-iteration-count:infinite!important}
+  .afterglow-palette i{animation-duration:6s!important;animation-iteration-count:infinite!important}
+  .shot-a{animation-duration:11s!important;animation-iteration-count:infinite!important}.shot-b{animation-duration:13s!important;animation-iteration-count:infinite!important}.shot-c{animation-duration:12s!important;animation-iteration-count:infinite!important}.shot-d{animation-duration:14s!important;animation-iteration-count:infinite!important}.shot-e{animation-duration:10s!important;animation-iteration-count:infinite!important}
+  .orbit-preview::before{animation-duration:9s!important;animation-iteration-count:infinite!important}
+  .orbit-hero-copy em{animation-duration:8s!important;animation-iteration-count:infinite!important}
+  .orbit-path i{animation-duration:12s!important;animation-iteration-count:infinite!important}
+  .orbit-path b,.orbit-sync i{animation-duration:3.4s!important;animation-iteration-count:infinite!important}
+  .orbit-phone{animation-duration:8s!important;animation-iteration-count:infinite!important}
+  .orbit-goal-card>span i{animation-duration:10s!important;animation-iteration-count:infinite!important}
+  .orbit-task{animation-duration:8s!important;animation-iteration-count:infinite!important}
+  .omnigaze-metric strong,.court-win strong,.court-win>span i,.orbit-life-score>strong,.orbit-life-score>span i{transition-duration:.65s!important}
+}
