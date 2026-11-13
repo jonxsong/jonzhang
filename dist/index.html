@@ -57,7 +57,11 @@
       </header>
 
       <section class="hero" id="top" aria-labelledby="intro-title">
-        <p class="eyebrow reveal">HELLO / 你好</p>
+        <div class="language-switcher reveal" role="group" aria-label="Choose portfolio language">
+          <button class="language-option active" type="button" data-language="en" aria-pressed="true">Hello</button>
+          <span aria-hidden="true">/</span>
+          <button class="language-option" type="button" data-language="zh" aria-pressed="false">你好</button>
+        </div>
         <h1 id="intro-title" class="reveal">Hi, I’m Jon Zhang<span class="period">.</span></h1>
         <p class="hero-copy reveal"><em>GenAI / Full-Stack Engineer.</em> Driven by <span class="spark">✱</span> <strong>building intelligent systems,</strong> engineering scalable applications, and <span class="flower">ꕤ</span> <strong>turning ambitious ideas into real-world products.</strong></p>
         <div class="hero-actions reveal">

@@ -32,6 +32,7 @@ This portfolio is designed as a narrative, not a résumé pasted into a webpage.
 | **Work experience** | Expandable company profiles with role, period, team, location, context, and highlights |
 | **Selected work** | Clickable Omnigaze and Afterglow case studies with live-product and source links |
 | **Life roadmap** | Clickable milestones connecting education, internships, engineering roles, and the current GenAI chapter |
+| **Language** | Instant English and Simplified Chinese views with the visitor’s preference remembered locally |
 | **Personal links** | Instagram, Facebook, LinkedIn, GitHub, résumé, and meeting links with visual previews |
 | **Atmosphere** | A 24-hour interactive sky that shifts the page palette from sunrise through night |
 
@@ -62,7 +63,7 @@ Static portfolio ──────► Social profiles · Résumé · Live apps
    │
    ├── index.html      content + structure
    ├── styles.css      visual system + responsive layout
-   └── app.js          time theme + interactions
+   └── app.js          language, time theme + interactions
    │
    ├──────────────► Public ChatGPT Sites deployment
    └──────────────► GitHub source repository
