@@ -31,7 +31,7 @@ This portfolio is designed as a narrative, not a résumé pasted into a webpage.
 | Chapter | What visitors can explore |
 | --- | --- |
 | **Work experience** | Expandable company profiles with role, period, team, location, context, and highlights |
-| **Selected work** | Clickable Omnigaze, Afterglow, and CourtVision case studies with live-product and source links |
+| **Selected work** | A four-project browser with clickable case studies, a polished in-development placeholder, and standardized Focus / Stack / Data / Systems / Status details |
 | **Life roadmap** | Clickable milestones connecting education, internships, engineering roles, and the current GenAI chapter |
 | **Language** | Instant English and Simplified Chinese views with the visitor’s preference remembered locally |
 | **Personal links** | Instagram, Facebook, LinkedIn, GitHub, résumé, and meeting links with visual previews |
