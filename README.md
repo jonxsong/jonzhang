@@ -6,6 +6,7 @@
   <a href="https://jon-zhang-portfolio-2026.perkyaisle4.chatgpt.site"><img alt="Live portfolio" src="https://img.shields.io/badge/VIEW_LIVE_PORTFOLIO-3367FF?style=for-the-badge&logo=safari&logoColor=white" /></a>
   <a href="https://omnigaze.perkyaisle4.chatgpt.site"><img alt="Omnigaze" src="https://img.shields.io/badge/EXPLORE_OMNIGAZE-159D8F?style=for-the-badge&logo=googleearth&logoColor=white" /></a>
   <a href="https://courtvision-analytics.perkyaisle4.chatgpt.site"><img alt="CourtVision" src="https://img.shields.io/badge/EXPLORE_COURTVISION-0A2030?style=for-the-badge&logo=nba&logoColor=2DDEDA" /></a>
+  <a href="https://orbit-life-os.perkyaisle4.chatgpt.site"><img alt="Orbit" src="https://img.shields.io/badge/EXPLORE_ORBIT-08111F?style=for-the-badge&logo=expo&logoColor=9FC4FF" /></a>
 </p>
 
 <p align="center">
@@ -31,7 +32,7 @@ This portfolio is designed as a narrative, not a résumé pasted into a webpage.
 | Chapter | What visitors can explore |
 | --- | --- |
 | **Work experience** | Expandable company profiles with role, period, team, location, context, and highlights |
-| **Selected work** | A four-project browser with clickable case studies, a polished in-development placeholder, and standardized Focus / Stack / Data / Systems / Status details |
+| **Selected work** | Four clickable, animated case studies—Omnigaze, Afterglow, CourtVision, and Orbit—with standardized Focus / Stack / Data / Systems / Status details |
 | **Life roadmap** | Clickable milestones connecting education, internships, engineering roles, and the current GenAI chapter |
 | **Language** | Instant English and Simplified Chinese views with the visitor’s preference remembered locally |
 | **Personal links** | Instagram, Facebook, LinkedIn, GitHub, résumé, and meeting links with visual previews |
@@ -105,6 +106,7 @@ jon-portfolio/
 - **Omnigaze:** [omnigaze.perkyaisle4.chatgpt.site](https://omnigaze.perkyaisle4.chatgpt.site)
 - **Afterglow:** [afterglow-sky-forecast.perkyaisle4.chatgpt.site](https://afterglow-sky-forecast.perkyaisle4.chatgpt.site)
 - **CourtVision:** [courtvision-analytics.perkyaisle4.chatgpt.site](https://courtvision-analytics.perkyaisle4.chatgpt.site)
+- **Orbit:** [orbit-life-os.perkyaisle4.chatgpt.site](https://orbit-life-os.perkyaisle4.chatgpt.site)
 - **GitHub:** [github.com/jonxsong](https://github.com/jonxsong)
 - **LinkedIn:** [linkedin.com/in/jonxsong](https://www.linkedin.com/in/jonxsong/)
 

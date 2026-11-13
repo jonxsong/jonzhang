@@ -148,27 +148,34 @@ const translationsZh = {
   "Systems": "系统",
   "Live preview": "在线预览",
   "Visit CourtVision": "访问 CourtVision",
-  "PROJECT 04 / IN DEVELOPMENT": "项目 04 / 开发中",
-  "IDEA": "构想",
-  "BUILD": "构建",
-  "SHIP": "发布",
-  "NEXT / IN DEVELOPMENT": "下一项 / 开发中",
-  "Project 04": "项目 04",
-  "A new product is taking shape. Its story, architecture, and launch details will live here when it is ready.": "一个新产品正在成形。准备就绪后，它的故事、架构和发布细节将在这里呈现。",
-  "In development": "开发中",
-  "Details soon": "详情即将公布",
-  "Open placeholder": "打开项目预告",
-  "IN DEVELOPMENT": "开发中",
-  "The next idea is already in motion.": "下一个想法已经开始行动。",
-  "Project 04 is currently being developed. This space is reserved for its story, product decisions, and technical architecture when it is ready to share.": "项目 04 正在开发中。待适合公开时，这里将呈现它的故事、产品决策与技术架构。",
-  "Product direction is being defined.": "产品方向正在明确。",
-  "The technical foundation is taking shape.": "技术基础正在成形。",
-  "More details will arrive with the first public release.": "更多细节将在首次公开发布时揭晓。",
-  "To be announced": "待公布",
-  "In selection": "选型中",
-  "In discovery": "探索中",
-  "In architecture": "架构设计中",
-  "Details coming soon": "详情即将公布",
+  "ORBIT / LIFE OS": "ORBIT / 人生操作系统",
+  "Your life.": "你的人生。",
+  "Beautifully aligned.": "步步同心。",
+  "LIFE GRAPH": "人生图谱",
+  "THURSDAY, NOVEMBER 13": "11月13日 · 星期四",
+  "Good morning": "早上好",
+  "ACTIVE GOAL": "当前目标",
+  "Run a half marathon": "完成半程马拉松",
+  "Plan Saturday's long run": "规划周六长跑",
+  "Book a recovery session": "预约恢复训练",
+  "LOCAL FIRST": "本地优先",
+  "CLOUD OPTIONAL": "云端可选",
+  "PERSONAL OS / MOBILE": "个人操作系统 / 移动端",
+  "An iPhone-first, offline-first personal operating system connecting goals, milestones, tasks, habits, and reflections.": "一个以 iPhone 与离线体验为先的个人操作系统，连接目标、里程碑、任务、习惯与反思。",
+  "Offline-first": "离线优先",
+  "iPhone": "iPhone",
+  "Approval-gated AI": "需批准的 AI",
+  "Make today serve the life you’re building.": "让今天服务于你正在构建的人生。",
+  "Orbit is a calm, bilingual personal operating system that connects long-term direction to daily action. The iPhone app works offline first, syncs securely when enabled, and keeps AI recommendations as proposals until you approve them.": "Orbit 是一个平静、双语的个人操作系统，将长期方向连接到每日行动。iPhone 应用以离线使用为先，可在启用后安全同步，并让 AI 建议在你批准之前始终保持为提案。",
+  "Connects goals, milestones, tasks, habits, and reflections through a navigable Life Graph.": "通过可浏览的人生图谱连接目标、里程碑、任务、习惯与反思。",
+  "Commits core actions to local SQLite before the interface reports success.": "界面报告成功之前，核心操作会先提交到本地 SQLite。",
+  "Offers optional, revision-based cloud sync through a Go and PostgreSQL backend.": "通过 Go 与 PostgreSQL 后端提供可选的增量版本云同步。",
+  "Keeps AI approval-gated and excludes reflection content unless explicitly enabled for that request.": "AI 始终需要批准，反思内容只有在该次请求中明确启用后才会被使用。",
+  "Personal operating system": "个人操作系统",
+  "Expo · React Native · Go": "Expo · React Native · Go",
+  "SQLite · PostgreSQL": "SQLite · PostgreSQL",
+  "Offline-first sync · approval-gated AI": "离线优先同步 · 需批准的 AI",
+  "Visit Orbit": "访问 Orbit",
   "03 / LIFE ROADMAP": "03 / 人生路线图",
   "The road so far.": "一路走来。",
   "Select a milestone": "选择一个里程碑",
@@ -259,7 +266,7 @@ const attributeTranslationsZh = {
   "Abstract dashboard preview for Omnigaze": "Omnigaze 抽象仪表盘预览",
   "AI-assisted sunset forecast preview for Afterglow": "Afterglow AI 辅助日落预测预览",
   "AI-powered basketball intelligence preview for CourtVision": "CourtVision AI 篮球智能预览",
-  "Project 04 concept preview": "项目 04 概念预览",
+  "Orbit personal operating system preview": "Orbit 个人操作系统预览",
   "Jon Zhang — GenAI and full-stack engineer building intelligent systems and ambitious products.": "张凯淞——构建智能系统与创新产品的生成式 AI 和全栈工程师。"
 };
 
@@ -429,6 +436,38 @@ projectEntries.forEach((entry) => {
     requestAnimationFrame(() => entry.scrollIntoView({ behavior: "smooth", block: "start" }));
   });
 });
+
+const reducedProjectMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const marketSignal = document.querySelector("[data-market-signal]");
+const winProbability = document.querySelector("[data-win-probability]");
+const winBar = document.querySelector("[data-win-bar]");
+const orbitAlignment = document.querySelector("[data-orbit-alignment]");
+const orbitBar = document.querySelector("[data-orbit-bar]");
+const marketValues = ["+18.4%", "+21.7%", "+16.9%", "+24.2%", "+19.8%"];
+const winValues = [72, 61, 78, 68, 84, 74];
+const orbitValues = [86, 91, 88, 94, 89];
+let projectMetricStep = 0;
+
+function animateMetric(element, value) {
+  if (!element) return;
+  element.textContent = value;
+  element.classList.add("metric-tick");
+  window.setTimeout(() => element.classList.remove("metric-tick"), 420);
+}
+
+function advanceProjectMetrics() {
+  if (document.hidden) return;
+  projectMetricStep += 1;
+  animateMetric(marketSignal, marketValues[projectMetricStep % marketValues.length]);
+  const winValue = winValues[projectMetricStep % winValues.length];
+  animateMetric(winProbability, `${winValue}%`);
+  if (winBar) winBar.style.width = `${winValue}%`;
+  const orbitValue = orbitValues[projectMetricStep % orbitValues.length];
+  animateMetric(orbitAlignment, `${orbitValue}%`);
+  if (orbitBar) orbitBar.style.width = `${orbitValue}%`;
+}
+
+if (!reducedProjectMotion.matches) window.setInterval(advanceProjectMetrics, 2200);
 
 const experienceEntries = document.querySelectorAll(".experience-entry");
 experienceEntries.forEach((entry) => {
