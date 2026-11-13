@@ -3,7 +3,9 @@ const siteConfig = {
 };
 
 const translationsZh = {
-  "Hi, I’m Jon Zhang": "你好，我是 Jon Zhang",
+  "Hi, I’m Jon Zhang": "你好，我是张凯淞",
+  "Jon Zhang": "张凯淞",
+  "JON ZHANG © 2026": "张凯淞 © 2026",
   "GenAI / Full-Stack Engineer.": "生成式 AI / 全栈工程师。",
   "Driven by": "致力于",
   "building intelligent systems,": "构建智能系统，",
@@ -188,16 +190,16 @@ const translationsZh = {
 
 const attributeTranslationsZh = {
   "Site header": "网站页眉",
-  "Jon Zhang — go to top": "Jon Zhang — 返回顶部",
+  "Jon Zhang — go to top": "张凯淞 — 返回顶部",
   "Quick links": "快捷链接",
   "Time of day": "一天中的时间",
   "Choose time of day": "选择一天中的时间",
   "Choose portfolio language": "选择作品集语言",
-  "Jon Zhang on Instagram": "Jon Zhang 的 Instagram",
-  "Jon Zhang on Facebook": "Jon Zhang 的 Facebook",
-  "Jon Zhang on LinkedIn": "Jon Zhang 的 LinkedIn",
-  "Jon Zhang on GitHub": "Jon Zhang 的 GitHub",
-  "View Jon Zhang's resume on Overleaf": "在 Overleaf 查看 Jon Zhang 的简历",
+  "Jon Zhang on Instagram": "张凯淞的 Instagram",
+  "Jon Zhang on Facebook": "张凯淞的 Facebook",
+  "Jon Zhang on LinkedIn": "张凯淞的 LinkedIn",
+  "Jon Zhang on GitHub": "张凯淞的 GitHub",
+  "View Jon Zhang's resume on Overleaf": "在 Overleaf 查看张凯淞的简历",
   "Life milestones": "人生里程碑",
   "Amdocs company image": "Amdocs 公司图片",
   "EIS Group company image": "EIS Group 公司图片",
@@ -205,7 +207,7 @@ const attributeTranslationsZh = {
   "Intel Corporation company image": "Intel Corporation 公司图片",
   "Abstract dashboard preview for Omnigaze": "Omnigaze 抽象仪表盘预览",
   "Sunset forecast preview for Afterglow": "Afterglow 日落预测预览",
-  "Jon Zhang — GenAI and full-stack engineer building intelligent systems and ambitious products.": "Jon Zhang——构建智能系统与创新产品的生成式 AI 和全栈工程师。"
+  "Jon Zhang — GenAI and full-stack engineer building intelligent systems and ambitious products.": "张凯淞——构建智能系统与创新产品的生成式 AI 和全栈工程师。"
 };
 
 const originalTextNodes = new WeakMap();
@@ -247,7 +249,7 @@ function translatePageText(language) {
 function setLanguage(language, persist = true) {
   currentLanguage = language === "zh" ? "zh" : "en";
   document.documentElement.lang = currentLanguage === "zh" ? "zh-CN" : "en";
-  document.title = currentLanguage === "zh" ? "Jon Zhang — 生成式 AI / 全栈工程师" : "Jon Zhang — GenAI / Full-Stack Engineer";
+  document.title = currentLanguage === "zh" ? "张凯淞 — 生成式 AI / 全栈工程师" : "Jon Zhang — GenAI / Full-Stack Engineer";
   translatePageText(currentLanguage);
   document.querySelectorAll(".language-option").forEach((button) => {
     const selected = button.dataset.language === currentLanguage;
