@@ -7,6 +7,8 @@
   <a href="https://omnigaze.jonzhang.dev"><img alt="Omnigaze" src="https://img.shields.io/badge/EXPLORE_OMNIGAZE-159D8F?style=for-the-badge&logo=googleearth&logoColor=white" /></a>
   <a href="https://courtvision.jonzhang.dev"><img alt="CourtVision" src="https://img.shields.io/badge/EXPLORE_COURTVISION-0A2030?style=for-the-badge&logo=nba&logoColor=2DDEDA" /></a>
   <a href="https://orbit.jonzhang.dev"><img alt="Orbit" src="https://img.shields.io/badge/EXPLORE_ORBIT-08111F?style=for-the-badge&logo=expo&logoColor=9FC4FF" /></a>
+  <a href="https://github.com/jonxsong/Affinity"><img alt="Affinity" src="https://img.shields.io/badge/EXPLORE_AFFINITY-0A211A?style=for-the-badge&logo=rust&logoColor=72EFB5" /></a>
+  <a href="https://github.com/jonxsong/Relay"><img alt="Relay" src="https://img.shields.io/badge/EXPLORE_RELAY-15152D?style=for-the-badge&logo=go&logoColor=A89CFF" /></a>
 </p>
 
 <p align="center">
@@ -32,7 +34,7 @@ This portfolio is designed as a narrative, not a résumé pasted into a webpage.
 | Chapter | What visitors can explore |
 | --- | --- |
 | **Work experience** | Expandable company profiles with role, period, team, location, context, and highlights |
-| **Selected work** | Four clickable, animated case studies—Omnigaze, Afterglow, CourtVision, and Orbit—plus two future-project slots, all using standardized Focus / Stack / Data / Systems / Status details |
+| **Selected work** | Six clickable, animated case studies—Omnigaze, Afterglow, CourtVision, Orbit, Affinity, and Relay—all using standardized Focus / Stack / Data / Systems / Status details |
 | **Life roadmap** | Clickable milestones connecting education, internships, engineering roles, and the current GenAI chapter |
 | **Language** | Instant English and Simplified Chinese views with the visitor’s preference remembered locally |
 | **Personal links** | Instagram, Facebook, LinkedIn, GitHub, résumé, and meeting links with visual previews |
@@ -111,6 +113,8 @@ jon-portfolio/
 - **Afterglow:** [afterglow-sky-forecast.perkyaisle4.chatgpt.site](https://afterglow-sky-forecast.perkyaisle4.chatgpt.site)
 - **CourtVision:** [courtvision.jonzhang.dev](https://courtvision.jonzhang.dev)
 - **Orbit:** [orbit.jonzhang.dev](https://orbit.jonzhang.dev)
+- **Affinity:** [github.com/jonxsong/Affinity](https://github.com/jonxsong/Affinity)
+- **Relay:** [github.com/jonxsong/Relay](https://github.com/jonxsong/Relay)
 - **GitHub:** [github.com/jonxsong](https://github.com/jonxsong)
 - **LinkedIn:** [linkedin.com/in/jonxsong](https://www.linkedin.com/in/jonxsong/)
 
