@@ -4,9 +4,9 @@
 
 <p align="center">
   <a href="https://jonzhang.dev"><img alt="Live portfolio" src="https://img.shields.io/badge/VIEW_LIVE_PORTFOLIO-3367FF?style=for-the-badge&logo=safari&logoColor=white" /></a>
-  <a href="https://omnigaze.perkyaisle4.chatgpt.site"><img alt="Omnigaze" src="https://img.shields.io/badge/EXPLORE_OMNIGAZE-159D8F?style=for-the-badge&logo=googleearth&logoColor=white" /></a>
-  <a href="https://courtvision-analytics.perkyaisle4.chatgpt.site"><img alt="CourtVision" src="https://img.shields.io/badge/EXPLORE_COURTVISION-0A2030?style=for-the-badge&logo=nba&logoColor=2DDEDA" /></a>
-  <a href="https://orbit-life-os.perkyaisle4.chatgpt.site"><img alt="Orbit" src="https://img.shields.io/badge/EXPLORE_ORBIT-08111F?style=for-the-badge&logo=expo&logoColor=9FC4FF" /></a>
+  <a href="https://omnigaze.jonzhang.dev"><img alt="Omnigaze" src="https://img.shields.io/badge/EXPLORE_OMNIGAZE-159D8F?style=for-the-badge&logo=googleearth&logoColor=white" /></a>
+  <a href="https://courtvision.jonzhang.dev"><img alt="CourtVision" src="https://img.shields.io/badge/EXPLORE_COURTVISION-0A2030?style=for-the-badge&logo=nba&logoColor=2DDEDA" /></a>
+  <a href="https://orbit.jonzhang.dev"><img alt="Orbit" src="https://img.shields.io/badge/EXPLORE_ORBIT-08111F?style=for-the-badge&logo=expo&logoColor=9FC4FF" /></a>
 </p>
 
 <p align="center">
@@ -107,10 +107,10 @@ jon-portfolio/
 ## ↗ Links
 
 - **Portfolio:** [jonzhang.dev](https://jonzhang.dev)
-- **Omnigaze:** [omnigaze.perkyaisle4.chatgpt.site](https://omnigaze.perkyaisle4.chatgpt.site)
+- **Omnigaze:** [omnigaze.jonzhang.dev](https://omnigaze.jonzhang.dev)
 - **Afterglow:** [afterglow-sky-forecast.perkyaisle4.chatgpt.site](https://afterglow-sky-forecast.perkyaisle4.chatgpt.site)
-- **CourtVision:** [courtvision-analytics.perkyaisle4.chatgpt.site](https://courtvision-analytics.perkyaisle4.chatgpt.site)
-- **Orbit:** [orbit-life-os.perkyaisle4.chatgpt.site](https://orbit-life-os.perkyaisle4.chatgpt.site)
+- **CourtVision:** [courtvision.jonzhang.dev](https://courtvision.jonzhang.dev)
+- **Orbit:** [orbit.jonzhang.dev](https://orbit.jonzhang.dev)
 - **GitHub:** [github.com/jonxsong](https://github.com/jonxsong)
 - **LinkedIn:** [linkedin.com/in/jonxsong](https://www.linkedin.com/in/jonxsong/)
 
