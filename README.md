@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://jon-zhang-portfolio-2026.perkyaisle4.chatgpt.site"><img alt="Live portfolio" src="https://img.shields.io/badge/VIEW_LIVE_PORTFOLIO-3367FF?style=for-the-badge&logo=safari&logoColor=white" /></a>
+  <a href="https://jonzhang.dev"><img alt="Live portfolio" src="https://img.shields.io/badge/VIEW_LIVE_PORTFOLIO-3367FF?style=for-the-badge&logo=safari&logoColor=white" /></a>
   <a href="https://omnigaze.perkyaisle4.chatgpt.site"><img alt="Omnigaze" src="https://img.shields.io/badge/EXPLORE_OMNIGAZE-159D8F?style=for-the-badge&logo=googleearth&logoColor=white" /></a>
   <a href="https://courtvision-analytics.perkyaisle4.chatgpt.site"><img alt="CourtVision" src="https://img.shields.io/badge/EXPLORE_COURTVISION-0A2030?style=for-the-badge&logo=nba&logoColor=2DDEDA" /></a>
   <a href="https://orbit-life-os.perkyaisle4.chatgpt.site"><img alt="Orbit" src="https://img.shields.io/badge/EXPLORE_ORBIT-08111F?style=for-the-badge&logo=expo&logoColor=9FC4FF" /></a>
@@ -55,7 +55,7 @@ This portfolio is designed as a narrative, not a résumé pasted into a webpage.
   <img src="docs/architecture.svg" alt="Hand-drawn architecture diagram showing the browser, static portfolio, external links, public hosting, and GitHub repository" width="100%" />
 </p>
 
-The committed `dist/` directory is the product. HTML owns the content and semantics, CSS provides the visual system and responsive behavior, and a small JavaScript layer powers the time theme and interactive sections. The exact GitHub source is packaged and published to ChatGPT Sites.
+The committed `dist/` directory is the product. HTML owns the content and semantics, CSS provides the visual system and responsive behavior, and a small JavaScript layer powers the time theme and interactive sections. GitHub Actions publishes the exact committed output to GitHub Pages at `jonzhang.dev`.
 
 ```text
 Visitor
@@ -67,7 +67,7 @@ Static portfolio ──────► Social profiles · Résumé · Live apps
    ├── styles.css      visual system + responsive layout
    └── app.js          language, time theme + interactions
    │
-   ├──────────────► Public ChatGPT Sites deployment
+   ├──────────────► GitHub Pages · jonzhang.dev
    └──────────────► GitHub source repository
 ```
 
@@ -85,9 +85,13 @@ Then visit [http://localhost:4173](http://localhost:4173).
 
 ```text
 jon-portfolio/
+├── .github/
+│   └── workflows/
+│       └── deploy-pages.yml  # GitHub Pages deployment
 ├── .openai/
 │   └── hosting.json          # ChatGPT Sites configuration
 ├── dist/
+│   ├── CNAME                 # jonzhang.dev custom domain
 │   ├── assets/
 │   │   ├── favicon.svg       # JZ. site mark
 │   │   └── logos/            # Company and university assets
@@ -102,7 +106,7 @@ jon-portfolio/
 
 ## ↗ Links
 
-- **Portfolio:** [jon-zhang-portfolio-2026.perkyaisle4.chatgpt.site](https://jon-zhang-portfolio-2026.perkyaisle4.chatgpt.site)
+- **Portfolio:** [jonzhang.dev](https://jonzhang.dev)
 - **Omnigaze:** [omnigaze.perkyaisle4.chatgpt.site](https://omnigaze.perkyaisle4.chatgpt.site)
 - **Afterglow:** [afterglow-sky-forecast.perkyaisle4.chatgpt.site](https://afterglow-sky-forecast.perkyaisle4.chatgpt.site)
 - **CourtVision:** [courtvision-analytics.perkyaisle4.chatgpt.site](https://courtvision-analytics.perkyaisle4.chatgpt.site)
