@@ -7,8 +7,8 @@
   <a href="https://omnigaze.jonzhang.dev"><img alt="Omnigaze" src="https://img.shields.io/badge/EXPLORE_OMNIGAZE-159D8F?style=for-the-badge&logo=googleearth&logoColor=white" /></a>
   <a href="https://courtvision.jonzhang.dev"><img alt="CourtVision" src="https://img.shields.io/badge/EXPLORE_COURTVISION-0A2030?style=for-the-badge&logo=nba&logoColor=2DDEDA" /></a>
   <a href="https://orbit.jonzhang.dev"><img alt="Orbit" src="https://img.shields.io/badge/EXPLORE_ORBIT-08111F?style=for-the-badge&logo=expo&logoColor=9FC4FF" /></a>
-  <a href="https://github.com/jonxsong/Affinity"><img alt="Affinity" src="https://img.shields.io/badge/EXPLORE_AFFINITY-0A211A?style=for-the-badge&logo=rust&logoColor=72EFB5" /></a>
-  <a href="https://github.com/jonxsong/Relay"><img alt="Relay" src="https://img.shields.io/badge/EXPLORE_RELAY-15152D?style=for-the-badge&logo=go&logoColor=A89CFF" /></a>
+  <a href="https://affinity.jonzhang.dev"><img alt="Affinity" src="https://img.shields.io/badge/EXPLORE_AFFINITY-0A211A?style=for-the-badge&logo=rust&logoColor=72EFB5" /></a>
+  <a href="https://relay.jonzhang.dev"><img alt="Relay" src="https://img.shields.io/badge/EXPLORE_RELAY-15152D?style=for-the-badge&logo=go&logoColor=A89CFF" /></a>
 </p>
 
 <p align="center">
@@ -113,8 +113,8 @@ jon-portfolio/
 - **Afterglow:** [afterglow-sky-forecast.perkyaisle4.chatgpt.site](https://afterglow-sky-forecast.perkyaisle4.chatgpt.site)
 - **CourtVision:** [courtvision.jonzhang.dev](https://courtvision.jonzhang.dev)
 - **Orbit:** [orbit.jonzhang.dev](https://orbit.jonzhang.dev)
-- **Affinity:** [github.com/jonxsong/Affinity](https://github.com/jonxsong/Affinity)
-- **Relay:** [github.com/jonxsong/Relay](https://github.com/jonxsong/Relay)
+- **Affinity:** [affinity.jonzhang.dev](https://affinity.jonzhang.dev) · [source](https://github.com/jonxsong/Affinity)
+- **Relay:** [relay.jonzhang.dev](https://relay.jonzhang.dev) · [source](https://github.com/jonxsong/Relay)
 - **GitHub:** [github.com/jonxsong](https://github.com/jonxsong)
 - **LinkedIn:** [linkedin.com/in/jonxsong](https://www.linkedin.com/in/jonxsong/)
 
