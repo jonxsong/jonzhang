@@ -250,6 +250,7 @@ const translationsZh = {
   "Vectors · JSON metadata · filters": "向量 · JSON 元数据 · 过滤器",
   "HNSW · RocksDB · REST/gRPC": "HNSW · RocksDB · REST/gRPC",
   "Production-oriented · open source": "面向生产 · 开源",
+  "Visit Axion": "访问 Axion",
   "DATACURRENT / PERFORMANCE INTELLIGENCE": "DATACURRENT / 性能智能",
   "REGRESSION DETECTED": "检测到性能回退",
   "QUERY PLAN": "查询计划",
