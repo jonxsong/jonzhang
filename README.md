@@ -9,6 +9,8 @@
   <a href="https://orbit.jonzhang.dev"><img alt="Orbit" src="https://img.shields.io/badge/EXPLORE_ORBIT-08111F?style=for-the-badge&logo=expo&logoColor=9FC4FF" /></a>
   <a href="https://affinity.jonzhang.dev"><img alt="Affinity" src="https://img.shields.io/badge/EXPLORE_AFFINITY-0A211A?style=for-the-badge&logo=rust&logoColor=72EFB5" /></a>
   <a href="https://relay.jonzhang.dev"><img alt="Relay" src="https://img.shields.io/badge/EXPLORE_RELAY-15152D?style=for-the-badge&logo=go&logoColor=A89CFF" /></a>
+  <a href="https://github.com/jonxsong/Axion"><img alt="Axion" src="https://img.shields.io/badge/EXPLORE_AXION-0A2640?style=for-the-badge&logo=rust&logoColor=7FD1FF" /></a>
+  <a href="https://datacurrent.jonzhang.dev"><img alt="DataCurrent" src="https://img.shields.io/badge/EXPLORE_DATACURRENT-162738?style=for-the-badge&logo=postgresql&logoColor=6ED6DF" /></a>
 </p>
 
 <p align="center">
@@ -34,7 +36,7 @@ This portfolio is designed as a narrative, not a résumé pasted into a webpage.
 | Chapter | What visitors can explore |
 | --- | --- |
 | **Work experience** | Expandable company profiles with role, period, team, location, context, and highlights |
-| **Selected work** | Six clickable, animated case studies—Omnigaze, Afterglow, CourtVision, Orbit, Affinity, and Relay—all using standardized Focus / Stack / Data / Systems / Status details |
+| **Selected work** | Eight clickable, animated case studies—Omnigaze, Afterglow, CourtVision, Orbit, Affinity, Relay, Axion, and DataCurrent—all using standardized Focus / Stack / Data / Systems / Status details |
 | **Life roadmap** | Clickable milestones connecting education, internships, engineering roles, and the current GenAI chapter |
 | **Language** | Instant English and Simplified Chinese views with the visitor’s preference remembered locally |
 | **Personal links** | Instagram, Facebook, LinkedIn, GitHub, résumé, and meeting links with visual previews |
@@ -115,6 +117,8 @@ jon-portfolio/
 - **Orbit:** [orbit.jonzhang.dev](https://orbit.jonzhang.dev)
 - **Affinity:** [affinity.jonzhang.dev](https://affinity.jonzhang.dev) · [source](https://github.com/jonxsong/Affinity)
 - **Relay:** [relay.jonzhang.dev](https://relay.jonzhang.dev) · [source](https://github.com/jonxsong/Relay)
+- **Axion:** [github.com/jonxsong/Axion](https://github.com/jonxsong/Axion)
+- **DataCurrent:** [datacurrent.jonzhang.dev](https://datacurrent.jonzhang.dev) · [source](https://github.com/jonxsong/DataCurrent)
 - **GitHub:** [github.com/jonxsong](https://github.com/jonxsong)
 - **LinkedIn:** [linkedin.com/in/jonxsong](https://www.linkedin.com/in/jonxsong/)
 

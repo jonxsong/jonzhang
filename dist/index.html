@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=20261114-3" />
+    <link rel="stylesheet" href="./styles.css?v=20261115-1" />
   </head>
   <body>
     <div class="sky" aria-hidden="true">
@@ -370,6 +370,72 @@
               </div>
             </div>
           </details>
+
+          <details class="project-entry axion-project">
+            <summary>
+              <span class="project-preview axion-preview" aria-label="Living vector search preview for Axion">
+                <span class="project-preview-bar"><i></i><i></i><i></i><b>AXION / VECTOR ENGINE</b></span>
+                <span class="axion-layout" aria-hidden="true">
+                  <span class="axion-query"><small>QUERY VECTOR</small><strong>documents.semantic</strong><em>cosine · top_k 3</em><span>[ .12&nbsp; .83&nbsp; .44&nbsp; … ]</span></span>
+                  <span class="axion-graph"><small>HNSW GRAPH</small><b></b><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="axion-results"><small>NEAREST NEIGHBORS</small><span><b>01</b> systems-design.pdf <em>.984</em><i></i></span><span><b>02</b> vector-index.md <em>.961</em><i></i></span><span><b>03</b> recovery-notes <em>.942</em><i></i></span></span>
+                  <span class="axion-metrics"><span><small>RECALL@10</small><strong>99.9%</strong></span><span><small>QUERIES / SEC</small><strong>3.4K</strong></span></span>
+                </span>
+              </span>
+              <span class="project-teaser">
+                <span class="project-meta"><span>RUST / VECTOR INFRASTRUCTURE</span><span>07</span></span>
+                <strong class="project-name">Axion</strong>
+                <span class="project-description">A durable vector-search engine built from first principles with native HNSW, RocksDB persistence, REST and gRPC APIs, a typed Python SDK, and an operational console.</span>
+                <span class="tag-row"><span>Rust</span><span>HNSW</span><span>RocksDB</span></span>
+                <span class="project-open">Explore project <b aria-hidden="true">+</b></span>
+              </span>
+            </summary>
+            <div class="project-detail">
+              <div class="project-narrative">
+                <p class="mini-label">ABOUT THE PROJECT</p>
+                <h4>Vector search without the black box.</h4>
+                <p>Axion delivers approximate nearest-neighbor search without hiding durability, recall, or failure semantics. Its native multilayer HNSW graph runs in Rust, RocksDB owns durable truth, and exact search remains available as a correctness oracle for every performance claim.</p>
+                <ul class="project-highlights"><li>Supports cosine, Euclidean, and dot-product scoring across exact and native HNSW search.</li><li>Commits records through synchronous RocksDB WAL batches with deterministic graph recovery.</li><li>Exposes versioned Axum REST, Tonic gRPC, OpenAPI, protobuf, and synchronous or asynchronous Python clients.</li><li>Ships with a responsive Next.js console, Prometheus metrics, OTLP tracing, Docker, and Kubernetes deployment paths.</li></ul>
+              </div>
+              <div class="project-spec">
+                <dl><div><dt>Focus</dt><dd>Vector search infrastructure</dd></div><div><dt>Stack</dt><dd>Rust · Axum · Tonic · Next.js</dd></div><div><dt>Data</dt><dd>Vectors · JSON metadata · filters</dd></div><div><dt>Systems</dt><dd>HNSW · RocksDB · REST/gRPC</dd></div><div><dt>Status</dt><dd><span class="live-dot"></span> Production-oriented · open source</dd></div></dl>
+                <div class="project-detail-actions"><a class="button button-primary" href="https://github.com/jonxsong/Axion" target="_blank" rel="noreferrer">View source <span>↗</span></a></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="project-entry datacurrent-project">
+            <summary>
+              <span class="project-preview datacurrent-preview" aria-label="Living database performance preview for DataCurrent">
+                <span class="project-preview-bar"><i></i><i></i><i></i><b>DATACURRENT / PERFORMANCE INTELLIGENCE</b></span>
+                <span class="datacurrent-layout" aria-hidden="true">
+                  <span class="dc-regression"><small>REGRESSION DETECTED</small><strong>+38%</strong><em>checkout_summary · p95</em><span class="dc-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span>
+                  <span class="dc-plan"><small>QUERY PLAN</small><span class="dc-node dc-root">Hash Join <em>42ms</em></span><span class="dc-branch"></span><span class="dc-node dc-left">Index Scan</span><span class="dc-node dc-right">Seq Scan</span></span>
+                  <span class="dc-evidence"><i></i><small>EVIDENCE COMPLETE</small><b>plan · history · schema · lineage</b></span>
+                  <span class="dc-verify"><small>VERIFICATION</small><strong>p95 −31%</strong><span><i></i></span><em>results agree · 5/5 runs</em></span>
+                </span>
+              </span>
+              <span class="project-teaser">
+                <span class="project-meta"><span>AI / DATABASE INTELLIGENCE</span><span>08</span></span>
+                <strong class="project-name">DataCurrent</strong>
+                <span class="project-description">Evidence-first performance intelligence for PostgreSQL and Snowflake—detect regressions, investigate plans, produce bounded recommendations, and verify outcomes.</span>
+                <span class="tag-row"><span>PostgreSQL</span><span>Snowflake</span><span>OpenAI Agents</span></span>
+                <span class="project-open">Explore project <b aria-hidden="true">+</b></span>
+              </span>
+            </summary>
+            <div class="project-detail">
+              <div class="project-narrative">
+                <p class="mini-label">ABOUT THE PROJECT</p>
+                <h4>Database answers teams can defend.</h4>
+                <p>DataCurrent connects the complete investigation loop: real workload collection, regression detection, structured plan analysis, cited AI proposals, and isolated empirical verification. Every finding preserves the boundary between observation, heuristic, hypothesis, and measured result.</p>
+                <ul class="project-highlights"><li>Surfaces workload health, expensive query fingerprints, historical latency, and provider context.</li><li>Investigates PostgreSQL and Snowflake through read-only plans, schema, indexes, lineage, and narrow evidence tools.</li><li>Uses the OpenAI Agents SDK for typed, cited, confidence-scored recommendations with explicit limitations.</li><li>Verifies candidates through repeated isolated benchmarks with median, p95, result digests, and visible methodology.</li></ul>
+              </div>
+              <div class="project-spec">
+                <dl><div><dt>Focus</dt><dd>Database performance intelligence</dd></div><div><dt>Stack</dt><dd>Next.js · FastAPI · OpenAI Agents SDK</dd></div><div><dt>Data</dt><dd>PostgreSQL · Snowflake · query plans</dd></div><div><dt>Systems</dt><dd>Celery · Redis · encrypted connectors</dd></div><div><dt>Status</dt><dd><span class="live-dot"></span> Production-ready · live</dd></div></dl>
+                <div class="project-detail-actions"><a class="button button-primary" href="https://datacurrent.jonzhang.dev/" target="_blank" rel="noreferrer">Visit DataCurrent <span>↗</span></a><a class="button button-ghost" href="https://github.com/jonxsong/DataCurrent" target="_blank" rel="noreferrer">View source <span>↗</span></a></div>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -429,6 +495,6 @@
     </main>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="./app.js?v=20261114-3"></script>
+    <script src="./app.js?v=20261115-1"></script>
   </body>
 </html>
