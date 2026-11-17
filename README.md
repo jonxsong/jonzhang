@@ -103,14 +103,14 @@ jon-portfolio/
 
 - **Portfolio:** [jonzhang.dev](https://jonzhang.dev)
 - **Omnigaze:** [omnigaze.jonzhang.dev](https://omnigaze.jonzhang.dev)
-- **Afterglow:** [afterglow-sky-forecast.perkyaisle4.chatgpt.site](https://afterglow-sky-forecast.perkyaisle4.chatgpt.site)
-- **Frasi:** [frasi-jazz-studio.perkyaisle4.chatgpt.site](https://frasi-jazz-studio.perkyaisle4.chatgpt.site) · [source](https://github.com/jonxsong/Frasi)
+- **Afterglow:** [https://afterglow.jonzhang.dev](https://afterglow.jonzhang.dev)
 - **CourtVision:** [courtvision.jonzhang.dev](https://courtvision.jonzhang.dev)
 - **Orbit:** [orbit.jonzhang.dev](https://orbit.jonzhang.dev)
 - **Affinity:** [affinity.jonzhang.dev](https://affinity.jonzhang.dev) · [source](https://github.com/jonxsong/Affinity)
 - **Relay:** [relay.jonzhang.dev](https://relay.jonzhang.dev) · [source](https://github.com/jonxsong/Relay)
 - **Axion:** [axion.jonzhang.dev](https://axion.jonzhang.dev) · [source](https://github.com/jonxsong/Axion)
 - **DataCurrent:** [datacurrent.jonzhang.dev](https://datacurrent.jonzhang.dev) · [source](https://github.com/jonxsong/DataCurrent)
+- **Frasi:** [frasi-jazz-studio.perkyaisle4.chatgpt.site](https://frasi-jazz-studio.perkyaisle4.chatgpt.site) · [source](https://github.com/jonxsong/Frasi)
 - **GitHub:** [github.com/jonxsong](https://github.com/jonxsong)
 - **LinkedIn:** [linkedin.com/in/jonxsong](https://www.linkedin.com/in/jonxsong/)
 
