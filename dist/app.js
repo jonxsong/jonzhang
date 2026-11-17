@@ -343,11 +343,93 @@ const translationsZh = {
   "Experience, education, and technical work.": "工作经历、教育背景与技术项目。",
   "VIEW PROFILE ↗": "查看主页 ↗",
   "VIEW GITHUB ↗": "查看 GITHUB ↗",
-  "OPEN RÉSUMÉ ↗": "打开简历 ↗"
+  "OPEN RÉSUMÉ ↗": "打开简历 ↗",
+  "Experience": "工作经历",
+  "Contact": "联系",
+  "EXPERIENCE": "工作经历",
+  "PROJECTS": "项目",
+  "CONTACT": "联系",
+  "JON ZHANG": "张凯淞",
+  "ENGINEER · BUILDER": "工程师 · 构建者",
+  "GENAI ENGINEER · FULL-STACK BUILDER": "生成式 AI 工程师 · 全栈构建者",
+  "I build AI systems that turn complex information into useful decisions.": "我构建 AI 系统，将复杂信息转化为有用的决策。",
+  "I’m a GenAI and full-stack engineer working across applied AI, data platforms, and developer infrastructure. I care about the entire path from model and system design to the interface people actually use.": "我是一名生成式 AI 与全栈工程师，专注于应用 AI、数据平台和开发者基础设施。我关注从模型与系统设计到用户真正使用的界面的完整路径。",
+  "Today I’m a GenAI Engineer at Amdocs. Before that, I built enterprise AI and data systems at EIS Group and production machine-learning workflows at Pandio.": "目前我在 Amdocs 担任生成式 AI 工程师。此前，我在 EIS Group 构建企业级 AI 与数据系统，并在 Pandio 开发生产级机器学习工作流。",
+  "Outside of work, I keep shipping public products that let me explore a problem all the way down—from the interaction to the infrastructure.": "工作之外，我持续发布公开产品，从交互体验一路深入到基础设施，完整探索每一个问题。",
+  "Explore my work": "探索我的作品",
+  "View experience": "查看工作经历",
+  "01 / SELECTED WORK": "01 / 精选作品",
+  "Products I’ve built.": "我构建的产品。",
+  "View every project": "查看全部项目",
+  "Explore every project": "探索全部项目",
+  "Full case cards, systems, status, live products, and source code.": "完整项目卡片、系统信息、状态、在线产品与源代码。",
+  "02 / PROOF OF WORK": "02 / 工作证明",
+  "Evidence over adjectives.": "用证据代替形容词。",
+  "Full experience": "完整工作经历",
+  "Eight public products": "八个公开产品",
+  "Live interfaces paired with inspectable source across AI, data, mobile, and infrastructure.": "涵盖 AI、数据、移动端和基础设施的在线产品，并附可查阅的源代码。",
+  "Enterprise AI systems": "企业级 AI 系统",
+  "Built company-wide investigation, retrieval, and data workflows at EIS Group.": "在 EIS Group 构建公司级调查、检索与数据工作流。",
+  "Applied machine learning": "应用机器学习",
+  "Developed 15+ models and analytics used by 30+ stakeholders at Pandio.": "在 Pandio 开发 15 个以上模型，以及服务 30 多位利益相关者的分析工具。",
+  "Built in public": "公开构建",
+  "Repositories, architecture, releases, and the engineering record behind the products.": "展示产品背后的代码仓库、架构、版本与工程记录。",
+  "This record will grow with upstream open-source contributions, benchmarks, and technical writing—only when the evidence exists.": "这份记录将随着上游开源贡献、基准测试和技术写作逐步增长——只在证据真实存在时呈现。",
+  "Where I’ve worked,": "我的工作经历，",
+  "and what I built there.": "以及我在那里构建的成果。",
+  "My work has moved from applied machine learning into enterprise data platforms and production GenAI systems.": "我的工作从应用机器学习逐步拓展到企业数据平台与生产级生成式 AI 系统。",
+  "Prefer one page? View résumé": "想看单页版本？查看简历",
+  "Building intelligent systems and production-ready AI applications at the intersection of models, enterprise data, and scalable software.": "在模型、企业数据和可扩展软件的交汇处构建智能系统与生产级 AI 应用。",
+  "GenAI engineering": "生成式 AI 工程",
+  "Enterprise systems": "企业系统",
+  "Applied AI": "应用 AI",
+  "Enterprise AI": "企业级 AI",
+  "Data platforms": "数据平台",
+  "Retrieval": "检索",
+  "Machine learning": "机器学习",
+  "MLOps": "机器学习运维",
+  "Product analytics": "产品分析",
+  "A six-month internship with Intel’s predictive analytics team and my first professional chapter in applied data science.": "在 Intel 预测分析团队完成为期六个月的实习，开启了我的应用数据科学职业篇章。",
+  "Predictive analytics": "预测分析",
+  "Data science": "数据科学",
+  "Internship": "实习",
+  "EDUCATION": "教育背景",
+  "A foundation in data.": "以数据为基础。",
+  "M.S. in Data Science": "数据科学硕士",
+  "Data Engineering specialization · 2023": "数据工程方向 · 2023",
+  "B.S. in Data Science": "数据科学学士",
+  "Next": "下一页",
+  "Explore the products": "探索产品",
+  "Products, systems,": "产品、系统，",
+  "and experiments.": "以及实验。",
+  "Eight public builds spanning market intelligence, sports research, mobile tools, machine learning, databases, and durable infrastructure.": "八个公开产品，涵盖市场情报、体育研究、移动工具、机器学习、数据库与可靠基础设施。",
+  "GitHub profile": "GitHub 主页",
+  "Open source · live": "开源 · 已上线",
+  "Start a conversation": "开始交流",
+  "Let’s build something": "一起构建真正",
+  "worth using.": "值得使用的产品。",
+  "I’m always open to thoughtful conversations about GenAI, full-stack products, data systems, and ambitious engineering work.": "我始终欢迎围绕生成式 AI、全栈产品、数据系统和有雄心的工程工作展开有深度的交流。",
+  "Connect on LinkedIn": "在 LinkedIn 联系",
+  "Ways to connect": "联系方式",
+  "Projects, architecture, and source code.": "项目、架构与源代码。",
+  "Résumé": "简历",
+  "View résumé ↗": "查看简历 ↗",
+  "Instagram": "Instagram",
+  "Life beyond the build.": "构建之外的生活。",
+  "Facebook": "Facebook",
+  "Connect and follow along.": "保持联系，关注近况。",
+  "Available for thoughtful collaborations and conversations.": "期待有想法、有价值的合作与交流。"
 };
 
 const attributeTranslationsZh = {
   "Site header": "网站页眉",
+  "Primary navigation": "主导航",
+  "Footer navigation": "页脚导航",
+  "Jon Zhang — home": "张凯淞 — 首页",
+  "Portrait of Jon Zhang": "张凯淞的照片",
+  "Professional experience": "职业经历",
+  "Selected projects": "精选项目",
+  "Ways to connect": "联系方式",
   "Jon Zhang — go to top": "张凯淞 — 返回顶部",
   "Quick links": "快捷链接",
   "Time of day": "一天中的时间",
@@ -413,7 +495,8 @@ function translatePageText(language) {
 function setLanguage(language, persist = true) {
   currentLanguage = language === "zh" ? "zh" : "en";
   document.documentElement.lang = currentLanguage === "zh" ? "zh-CN" : "en";
-  document.title = currentLanguage === "zh" ? "张凯淞 — 生成式 AI / 全栈工程师" : "Jon Zhang — GenAI / Full-Stack Engineer";
+  const pageTitle = currentLanguage === "zh" ? document.body.dataset.pageTitleZh : document.body.dataset.pageTitleEn;
+  document.title = pageTitle || (currentLanguage === "zh" ? "张凯淞 — 生成式 AI / 全栈工程师" : "Jon Zhang — GenAI / Full-Stack Engineer");
   translatePageText(currentLanguage);
   document.querySelectorAll(".language-option").forEach((button) => {
     const selected = button.dataset.language === currentLanguage;
@@ -426,6 +509,7 @@ function setLanguage(language, persist = true) {
 const toast = document.querySelector("#toast");
 let toastTimer;
 function showToast(message) {
+  if (!toast) return;
   toast.textContent = message;
   toast.classList.add("show");
   clearTimeout(toastTimer);
@@ -505,22 +589,24 @@ function setSkyTime(hour) {
 const savedHour = Number(localStorage.getItem("jon-sky-hour"));
 const pacificHour = Number(new Intl.DateTimeFormat("en-US", { timeZone: "America/Los_Angeles", hour: "numeric", hourCycle: "h23" }).format(new Date()));
 const initialHour = Number.isInteger(savedHour) && savedHour >= 0 && savedHour <= 23 ? savedHour : pacificHour;
-timeSlider.value = initialHour;
-setSkyTime(initialHour);
+if (timeSlider && timeOutput) {
+  timeSlider.value = initialHour;
+  setSkyTime(initialHour);
+}
 setLanguage(currentLanguage, false);
 document.querySelectorAll(".language-option").forEach((button) => {
   button.addEventListener("click", () => {
     setLanguage(button.dataset.language);
-    setSkyTime(Number(timeSlider.value));
+    if (timeSlider) setSkyTime(Number(timeSlider.value));
   });
 });
-timeSlider.addEventListener("input", (event) => setSkyTime(Number(event.target.value)));
-timeButton.addEventListener("click", () => {
-  const isOpen = timeControl.classList.toggle("open");
-  if (isOpen) timeSlider.focus();
+timeSlider?.addEventListener("input", (event) => setSkyTime(Number(event.target.value)));
+timeButton?.addEventListener("click", () => {
+  const isOpen = timeControl?.classList.toggle("open");
+  if (isOpen) timeSlider?.focus();
 });
 document.addEventListener("click", (event) => {
-  if (!timeControl.contains(event.target)) timeControl.classList.remove("open");
+  if (timeControl && !timeControl.contains(event.target)) timeControl.classList.remove("open");
 });
 
 document.querySelectorAll(".meeting-button").forEach((button) => {
@@ -540,6 +626,18 @@ projectEntries.forEach((entry) => {
     requestAnimationFrame(() => entry.scrollIntoView({ behavior: "smooth", block: "start" }));
   });
 });
+
+function openProjectFromHash() {
+  const key = decodeURIComponent(window.location.hash.slice(1));
+  if (!key) return;
+  const entry = document.getElementById(key);
+  if (!(entry instanceof HTMLDetailsElement) || !entry.classList.contains("project-entry")) return;
+  entry.open = true;
+  window.setTimeout(() => entry.scrollIntoView({ behavior: "smooth", block: "start" }), 60);
+}
+
+openProjectFromHash();
+window.addEventListener("hashchange", openProjectFromHash);
 
 const marketSignal = document.querySelector("[data-market-signal]");
 const winProbability = document.querySelector("[data-win-probability]");
@@ -579,35 +677,6 @@ experienceEntries.forEach((entry) => {
     experienceEntries.forEach((other) => {
       if (other !== entry) other.open = false;
     });
-  });
-});
-
-const roadmapTabs = Array.from(document.querySelectorAll(".roadmap-tab"));
-const roadmapPanels = Array.from(document.querySelectorAll(".roadmap-panel"));
-
-function openRoadmap(key) {
-  roadmapTabs.forEach((tab) => {
-    const selected = tab.dataset.roadmap === key;
-    tab.classList.toggle("active", selected);
-    tab.setAttribute("aria-selected", String(selected));
-    tab.tabIndex = selected ? 0 : -1;
-  });
-  roadmapPanels.forEach((panel) => {
-    const selected = panel.dataset.panel === key;
-    panel.classList.toggle("active", selected);
-    panel.hidden = !selected;
-  });
-}
-
-roadmapTabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => openRoadmap(tab.dataset.roadmap));
-  tab.addEventListener("keydown", (event) => {
-    if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(event.key)) return;
-    event.preventDefault();
-    const direction = event.key === "ArrowRight" || event.key === "ArrowDown" ? 1 : -1;
-    const next = roadmapTabs[(index + direction + roadmapTabs.length) % roadmapTabs.length];
-    openRoadmap(next.dataset.roadmap);
-    next.focus();
   });
 });
 

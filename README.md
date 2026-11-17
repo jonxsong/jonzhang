@@ -31,22 +31,23 @@
 
 ## ✦ The experience
 
-This portfolio is designed as a narrative, not a résumé pasted into a webpage. Visitors move from Jon’s professional experience into selected work and an interactive life roadmap—all inside a time-reactive visual atmosphere.
+This portfolio is designed as an editorial product, not a résumé pasted into one long webpage. The homepage introduces Jon, presents eight compact living project previews, and closes with an evidence-first proof panel. Dedicated routes give experience, projects, and contact room to breathe—all inside the existing time-reactive visual atmosphere.
 
 | Chapter | What visitors can explore |
 | --- | --- |
-| **Work experience** | Expandable company profiles with role, period, team, location, context, and highlights |
-| **Selected work** | Eight clickable, animated case studies—Omnigaze, Afterglow, CourtVision, Orbit, Affinity, Relay, Axion, and DataCurrent—all using standardized Focus / Stack / Data / Systems / Status details |
-| **Life roadmap** | Clickable milestones connecting education, internships, engineering roles, and the current GenAI chapter |
+| **Homepage** | Portrait-led introduction, 3-column living-project index, and a concise proof-of-work record |
+| **Experience** | Editorial career timeline with quantified outcomes, restrained current-role copy, and education |
+| **Projects** | Eight vertically arranged animated case cards using standardized Focus / Stack / Data / Systems / Status details |
+| **Contact** | Direct meeting, LinkedIn, GitHub, résumé, Instagram, and Facebook paths |
 | **Language** | Instant English and Simplified Chinese views with the visitor’s preference remembered locally |
-| **Personal links** | Instagram, Facebook, LinkedIn, GitHub, résumé, and meeting links with visual previews |
 | **Atmosphere** | A 24-hour interactive sky that shifts the page palette from sunrise through night |
 
 ## ◎ Design details
 
 - Responsive glass-and-gradient visual system
-- Keyboard-accessible experience accordions and roadmap tabs
-- Hover and focus previews for external profile links
+- Clean static routes at `/experience`, `/projects`, and `/contact`
+- Hash-addressable project cards that open directly from the homepage index
+- Portrait-led editorial layout with compact animated project previews
 - Local company and university assets
 - Custom `JZ.` browser favicon
 - Mobile layouts tuned independently from desktop
@@ -67,7 +68,10 @@ Visitor
    ▼
 Static portfolio ──────► Social profiles · Résumé · Live apps
    │
-   ├── index.html      content + structure
+   ├── index.html      portrait, project index + proof
+   ├── experience/     career timeline + education
+   ├── projects/       full animated case cards
+   ├── contact/        meeting + professional links
    ├── styles.css      visual system + responsive layout
    └── app.js          language, time theme + interactions
    │
@@ -98,9 +102,13 @@ jon-portfolio/
 │   ├── CNAME                 # jonzhang.dev custom domain
 │   ├── assets/
 │   │   ├── favicon.svg       # JZ. site mark
+│   │   ├── jon-portrait.png  # Homepage portrait
 │   │   └── logos/            # Company and university assets
 │   ├── app.js                # Theme and interaction logic
-│   ├── index.html            # Portfolio content
+│   ├── contact/index.html    # Contact route
+│   ├── experience/index.html # Experience route
+│   ├── projects/index.html   # Project case-card route
+│   ├── index.html            # Three-panel homepage
 │   └── styles.css            # Layout and visual system
 ├── docs/
 │   ├── architecture.svg      # System map

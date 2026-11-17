@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
   <title id="title">Jon Zhang portfolio architecture</title>
-  <desc id="desc">A hand-drawn style diagram showing the visitor browser, static portfolio files, external profile links, ChatGPT Sites hosting, and GitHub source repository.</desc>
+  <desc id="desc">A hand-drawn style diagram showing the visitor browser, four static portfolio routes, shared visual assets, external links, GitHub Pages hosting, and the GitHub source repository.</desc>
   <defs>
     <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
       <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7" result="noise"/>
@@ -27,25 +27,25 @@
   <path d="M79 238q50 13 100 0" fill="none" stroke="#3568ff" stroke-width="2" stroke-linecap="round"/>
 
   <rect class="box" x="302" y="104" width="296" height="198" rx="21"/>
-  <text x="450" y="143" text-anchor="middle" class="label">Static portfolio</text>
+  <text x="450" y="143" text-anchor="middle" class="label">Four static routes</text>
   <rect class="box accent" x="329" y="164" width="74" height="64" rx="12"/>
   <rect class="box warm" x="413" y="164" width="74" height="64" rx="12"/>
   <rect class="box mint" x="497" y="164" width="74" height="64" rx="12"/>
-  <text x="366" y="192" text-anchor="middle" class="small">HTML</text>
-  <text x="450" y="192" text-anchor="middle" class="small">CSS</text>
-  <text x="534" y="192" text-anchor="middle" class="small">JS</text>
-  <text x="366" y="211" text-anchor="middle" class="tiny">content</text>
-  <text x="450" y="211" text-anchor="middle" class="tiny">visuals</text>
-  <text x="534" y="211" text-anchor="middle" class="tiny">runtime</text>
-  <text x="450" y="263" text-anchor="middle" class="small">time theme · responsive UI · local logos</text>
+  <text x="366" y="192" text-anchor="middle" class="small">Home</text>
+  <text x="450" y="192" text-anchor="middle" class="small">Work</text>
+  <text x="534" y="192" text-anchor="middle" class="small">Contact</text>
+  <text x="366" y="211" text-anchor="middle" class="tiny">portrait + proof</text>
+  <text x="450" y="211" text-anchor="middle" class="tiny">experience + projects</text>
+  <text x="534" y="211" text-anchor="middle" class="tiny">professional links</text>
+  <text x="450" y="263" text-anchor="middle" class="small">shared CSS + JS · living previews · bilingual UI</text>
 
   <rect class="box mint" x="690" y="72" width="222" height="92" rx="18"/>
   <text x="801" y="108" text-anchor="middle" class="label">External links</text>
   <text x="801" y="134" text-anchor="middle" class="small">social + résumé + live apps</text>
 
   <rect class="box warm" x="690" y="207" width="222" height="92" rx="18"/>
-  <text x="801" y="244" text-anchor="middle" class="label">ChatGPT Sites</text>
-  <text x="801" y="270" text-anchor="middle" class="small">public production host</text>
+  <text x="801" y="244" text-anchor="middle" class="label">GitHub Pages</text>
+  <text x="801" y="270" text-anchor="middle" class="small">jonzhang.dev · HTTPS</text>
 
   <rect class="box accent" x="365" y="340" width="260" height="60" rx="16"/>
   <text x="495" y="367" text-anchor="middle" class="label">GitHub repository</text>
