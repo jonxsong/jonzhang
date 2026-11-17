@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://jonzhang.dev"><img alt="Live portfolio" src="https://img.shields.io/badge/VIEW_LIVE_PORTFOLIO-3367FF?style=for-the-badge&logo=safari&logoColor=white" /></a>
   <a href="https://omnigaze.jonzhang.dev"><img alt="Omnigaze" src="https://img.shields.io/badge/EXPLORE_OMNIGAZE-159D8F?style=for-the-badge&logo=googleearth&logoColor=white" /></a>
-  <a href="https://afterglow-sky-forecast.perkyaisle4.chatgpt.site/"><img alt="Afterglow" src="https://img.shields.io/badge/EXPLORE_AFTERGLOW-C8739A?style=for-the-badge&logo=icloud&logoColor=white" /></a>
+  <a href="https://afterglow.jonzhang.dev/"><img alt="Afterglow" src="https://img.shields.io/badge/EXPLORE_AFTERGLOW-C8739A?style=for-the-badge&logo=icloud&logoColor=white" /></a>
   <a href="https://courtvision.jonzhang.dev"><img alt="CourtVision" src="https://img.shields.io/badge/EXPLORE_COURTVISION-0A2030?style=for-the-badge&logo=nba&logoColor=2DDEDA" /></a>
   <a href="https://orbit.jonzhang.dev"><img alt="Orbit" src="https://img.shields.io/badge/EXPLORE_ORBIT-08111F?style=for-the-badge&logo=expo&logoColor=9FC4FF" /></a>
   <a href="https://affinity.jonzhang.dev"><img alt="Affinity" src="https://img.shields.io/badge/EXPLORE_AFFINITY-0A211A?style=for-the-badge&logo=rust&logoColor=72EFB5" /></a>
