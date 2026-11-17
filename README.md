@@ -33,11 +33,11 @@
 
 ## ✦ The experience
 
-This portfolio is designed as an editorial product, not a résumé pasted into one long webpage. The homepage introduces Jon in depth, presents eight compact living project previews, and closes with evidence of activity plus a guided next step. Dedicated routes give experience, projects, and contact room to breathe—all inside the existing time-reactive visual atmosphere.
+This portfolio is designed as an editorial product, not a résumé pasted into one long webpage. The homepage introduces Jon in depth, presents eight compact living project previews, and closes with open source contributions plus a guided next step. Dedicated routes give experience, projects, and contact room to breathe—all inside the existing time-reactive visual atmosphere.
 
 | Chapter | What visitors can explore |
 | --- | --- |
-| **Homepage** | Portrait-led About, eight living project previews, evidence of activity, and a guided next step |
+| **Homepage** | Portrait-led About, eight living project previews, upstream pull requests, and a guided next step |
 | **Experience** | Editorial career timeline with consistent impact callouts, technical highlights, and education |
 | **Projects** | Eight vertically arranged animated case cards using standardized Focus / Stack / Data / Systems / Status details |
 | **Contact** | Meeting CTA plus an icon-led directory for LinkedIn, GitHub, résumé, Instagram, and Facebook |
@@ -92,7 +92,7 @@ jon-portfolio/
 │   ├── contact/index.html    # Meeting and contact directory
 │   ├── experience/index.html # Experience route
 │   ├── projects/index.html   # Project case-card route
-│   ├── index.html            # About, project grid, evidence, and next step
+│   ├── index.html            # About, project grid, contributions, and next step
 │   └── styles.css            # Layout and visual system
 ├── docs/
 │   └── readme-hero.svg       # Repository artwork

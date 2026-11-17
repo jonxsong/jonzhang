@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles.css?v=20261116-3" />
+    <link rel="stylesheet" href="/styles.css?v=20261117-1" />
   </head>
   <body class="home-page" data-page-title-en="Jon Zhang — GenAI / Full-Stack Engineer" data-page-title-zh="张凯淞 — 生成式 AI / 全栈工程师">
     <div class="sky" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-b"></span><span class="orb orb-c"></span><span class="grain"></span></div>
@@ -107,15 +107,50 @@
         </div>
       </section>
 
-      <section class="home-panel proof-panel" aria-labelledby="proof-title">
-        <div class="editorial-heading reveal"><div><p class="section-kicker">02 / PROOF OF WORK</p><h2 id="proof-title">Evidence of activity.</h2></div><a href="/experience/">Full experience <span>→</span></a></div>
-        <div class="proof-list reveal">
-          <a class="proof-row" href="/projects/"><span class="proof-index">01</span><span><strong>Eight public products</strong><small>Live interfaces paired with inspectable source across AI, data, mobile, and infrastructure.</small></span><b>PROJECTS ↗</b></a>
-          <a class="proof-row" href="/experience/#eis"><span class="proof-index">02</span><span><strong>Enterprise AI systems</strong><small>Built company-wide investigation, retrieval, and data workflows at EIS Group.</small></span><b>EXPERIENCE ↗</b></a>
-          <a class="proof-row" href="/experience/#pandio"><span class="proof-index">03</span><span><strong>Applied machine learning</strong><small>Developed 15+ models and analytics used by 30+ stakeholders at Pandio.</small></span><b>EXPERIENCE ↗</b></a>
-          <a class="proof-row" href="https://github.com/jonxsong" target="_blank" rel="noreferrer"><span class="proof-index">04</span><span><strong>Built in public</strong><small>Repositories, architecture, releases, and the engineering record behind the products.</small></span><b>GITHUB ↗</b></a>
+      <section class="home-panel" id="open-source" aria-labelledby="open-source-title">
+        <div class="editorial-heading reveal">
+          <div><p class="section-kicker">02 / PROOF OF WORK</p><h2 id="open-source-title">Open source contributions.</h2></div>
         </div>
-        <p class="proof-note reveal">This record will grow with upstream open-source contributions, benchmarks, and technical writing—only when the evidence exists.</p>
+        <div class="contribution-group reveal">
+          <div class="contribution-group-heading">
+            <h3 id="open-prs-title">OPEN PULL REQUESTS</h3>
+            <span>4 pull requests in 1 repository</span>
+          </div>
+          <ul class="contribution-list" aria-labelledby="open-prs-title">
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/anthropics/anthropic-sdk-python/pull/2072" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>anthropics/</span><strong>anthropic-sdk-python</strong></span> <span class="contribution-number">#2072</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-17">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">One-shot tool iterators could be emptied when the SDK retried a rejected thread request.</p>
+              <p class="contribution-change">Keeps the same tool definitions across recovery attempts in both sync and async clients.</p>
+            </li>
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/anthropics/anthropic-sdk-python/pull/2071" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>anthropics/</span><strong>anthropic-sdk-python</strong></span> <span class="contribution-number">#2071</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-17">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">Cancelling an async poller could leave acknowledged work running and its trace open.</p>
+              <p class="contribution-change">Lets graceful shutdown finish during cancellation and always closes the work span.</p>
+            </li>
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/anthropics/anthropic-sdk-python/pull/2070" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>anthropics/</span><strong>anthropic-sdk-python</strong></span> <span class="contribution-number">#2070</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-17">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">Queued messages could push a tool result out of order and make the next API request invalid.</p>
+              <p class="contribution-change">Places each tool result immediately after the model reply that requested it.</p>
+            </li>
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/anthropics/anthropic-sdk-python/pull/2069" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>anthropics/</span><strong>anthropic-sdk-python</strong></span> <span class="contribution-number">#2069</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-17">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">Reopening an async stream manager reused an already-awaited coroutine and failed.</p>
+              <p class="contribution-change">Opens a fresh stream on each entry and prevents older streams from ending the current turn.</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <aside class="next-page reveal"><p>Next</p><a href="/projects/">Explore my work <span>↗</span></a></aside>
@@ -127,6 +162,6 @@
       </footer>
     </main>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="/app.js?v=20261116-4"></script>
+    <script src="/app.js?v=20261117-1"></script>
   </body>
 </html>
