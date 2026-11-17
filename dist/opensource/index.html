@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Upstream open source contributions by Jon Zhang, with pull requests and notes on what each change fixes." />
+    <meta name="theme-color" content="#080c15" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jon Zhang" />
+    <meta property="og:url" content="https://jonzhang.dev/opensource/" />
+    <meta property="og:title" content="Open Source — Jon Zhang" />
+    <meta property="og:description" content="Upstream open source contributions by Jon Zhang, with pull requests and notes on what each change fixes." />
+    <meta property="og:image" content="https://jonzhang.dev/assets/social-preview.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Portfolio card with a portrait of Jon Zhang, GenAI / Full-Stack Engineer, on a dusk gradient." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Open Source — Jon Zhang" />
+    <meta name="twitter:description" content="Upstream open source contributions by Jon Zhang, with pull requests and notes on what each change fixes." />
+    <meta name="twitter:image" content="https://jonzhang.dev/assets/social-preview-x.jpg" />
+    <meta name="twitter:image:alt" content="Portfolio card with a portrait of Jon Zhang, GenAI / Full-Stack Engineer, on a dusk gradient." />
+    <title>Open Source — Jon Zhang</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css?v=20261117-2" />
+  </head>
+  <body class="inner-page open-source-page" data-page-title-en="Open Source — Jon Zhang" data-page-title-zh="开源贡献 — 张凯淞">
+    <div class="sky" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-b"></span><span class="orb orb-c"></span><span class="grain"></span></div>
+    <main class="shell site-shell">
+      <header class="topbar site-header" aria-label="Site header">
+        <a class="monogram" href="/" aria-label="Jon Zhang — home">JZ<span>.</span></a>
+        <nav class="primary-nav" aria-label="Primary navigation"><a href="/experience/">Experience</a><a href="/projects/">Projects</a><a class="active" aria-current="page" href="/opensource/">Open Source</a><a href="/contact/">Contact</a></nav>
+        <div class="header-tools">
+          <div class="language-switcher compact" role="group" aria-label="Choose portfolio language"><button class="language-option active" type="button" data-language="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button class="language-option" type="button" data-language="zh" aria-pressed="false">中文</button></div>
+          <div class="time-theme-control" id="time-theme-control"><div class="time-theme-panel"><div class="time-theme-body"><output id="time-output" for="time-slider">1 PM</output><input id="time-slider" type="range" min="0" max="23" step="1" value="13" aria-label="Time of day" /></div><button class="icon-button time-button" id="time-button" type="button" aria-label="Choose time of day" title="Choose time of day"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.42 1.42m9.88 9.88 1.42 1.42m0-12.72-1.42 1.42M7.06 16.94l-1.42 1.42"/><circle cx="12" cy="12" r="4"/></svg></button></div></div>
+        </div>
+      </header>
+
+      <header class="page-intro reveal">
+        <p class="section-kicker">OPEN SOURCE</p>
+        <h1>Open source contributions.</h1>
+        <div class="page-intro-bottom"><p>Selected contributions to the tools I use, with a short note on the problem and the fix behind each pull request.</p><a class="text-link" href="https://github.com/jonxsong" target="_blank" rel="noreferrer">GitHub profile <span>↗</span></a></div>
+      </header>
+
+      <section class="contribution-section" aria-labelledby="open-prs-title">
+        <div class="contribution-group reveal">
+          <div class="contribution-group-heading">
+            <h3 id="open-prs-title">OPEN PULL REQUESTS</h3>
+            <span>5 pull requests in 1 repository</span>
+          </div>
+          <ul class="contribution-list" role="list">
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/anthropics/anthropic-sdk-python/pull/2073" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>anthropics/</span><strong>anthropic-sdk-python</strong></span> <span class="contribution-number">#2073</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-17">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">A session runner could execute pending tools after reconnecting to a session that had already ended.</p>
+              <p class="contribution-change">Checks for session termination in history before dispatching tools, then closes the stream and exits.</p>
+            </li>
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/anthropics/anthropic-sdk-python/pull/2072" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>anthropics/</span><strong>anthropic-sdk-python</strong></span> <span class="contribution-number">#2072</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-17">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">One-shot tool iterators could be emptied when the SDK retried a rejected thread request.</p>
+              <p class="contribution-change">Keeps the same tool definitions across recovery attempts in both sync and async clients.</p>
+            </li>
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/anthropics/anthropic-sdk-python/pull/2071" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>anthropics/</span><strong>anthropic-sdk-python</strong></span> <span class="contribution-number">#2071</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-17">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">Cancelling an async poller could leave acknowledged work running and its trace open.</p>
+              <p class="contribution-change">Lets graceful shutdown finish during cancellation and always closes the work span.</p>
+            </li>
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/anthropics/anthropic-sdk-python/pull/2070" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>anthropics/</span><strong>anthropic-sdk-python</strong></span> <span class="contribution-number">#2070</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-17">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">Queued messages could push a tool result out of order and make the next API request invalid.</p>
+              <p class="contribution-change">Places each tool result immediately after the model reply that requested it.</p>
+            </li>
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/anthropics/anthropic-sdk-python/pull/2069" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>anthropics/</span><strong>anthropic-sdk-python</strong></span> <span class="contribution-number">#2069</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-17">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">Reopening an async stream manager reused an already-awaited coroutine and failed.</p>
+              <p class="contribution-change">Opens a fresh stream on each entry and prevents older streams from ending the current turn.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <aside class="next-page reveal"><p>Next</p><a href="/contact/">Start a conversation <span>↗</span></a></aside>
+
+      <footer class="site-footer reveal"><div><strong>JON ZHANG</strong><span>GENAI × ENGINEERING × PRODUCT</span></div><nav aria-label="Footer navigation"><a href="/experience/">Experience</a><a href="/projects/">Projects</a><a href="/opensource/">Open Source</a><a href="/contact/">Contact</a></nav><span>© 2026</span></footer>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js?v=20261117-2"></script>
+  </body>
+</html>

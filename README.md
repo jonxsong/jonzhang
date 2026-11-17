@@ -33,13 +33,14 @@
 
 ## ✦ The experience
 
-This portfolio is designed as an editorial product, not a résumé pasted into one long webpage. The homepage introduces Jon in depth, presents eight compact living project previews, and closes with open source contributions plus a guided next step. Dedicated routes give experience, projects, and contact room to breathe—all inside the existing time-reactive visual atmosphere.
+The homepage introduces Jon and highlights three projects with animated previews. Dedicated pages cover his experience, the full project catalog, upstream open source contributions, and ways to get in touch.
 
 | Chapter | What visitors can explore |
 | --- | --- |
-| **Homepage** | Portrait-led About, eight living project previews, upstream pull requests, and a guided next step |
+| **Homepage** | Portrait-led About and three selected project previews |
 | **Experience** | Editorial career timeline with consistent impact callouts, technical highlights, and education |
 | **Projects** | Eight vertically arranged animated case cards using standardized Focus / Stack / Data / Systems / Status details |
+| **[Open Source](https://jonzhang.dev/opensource/)** | Upstream pull requests with statuses and concise notes on the problem and proposed fix |
 | **Contact** | Meeting CTA plus an icon-led directory for LinkedIn, GitHub, résumé, Instagram, and Facebook |
 | **Language** | Instant English and Simplified Chinese views with the visitor’s preference remembered locally |
 | **Atmosphere** | A 24-hour interactive sky that shifts the page palette from sunrise through night |
@@ -47,7 +48,7 @@ This portfolio is designed as an editorial product, not a résumé pasted into o
 ## ◎ Design details
 
 - Responsive glass-and-gradient visual system
-- Clean static routes at `/experience`, `/projects`, and `/contact`
+- Clean static routes at `/experience`, `/projects`, `/opensource`, and `/contact`
 - Hash-addressable project cards that open directly from the homepage index
 - Portrait-led editorial layout with compact animated project previews
 - Local company and university assets
@@ -63,7 +64,7 @@ The portfolio is structured to answer four questions in order: **Who is Jon? Wha
 ```mermaid
 flowchart LR
   A["01 · Discover<br/>About + positioning"] --> B["02 · Explore<br/>Living project previews"]
-  B --> C["03 · Validate<br/>Case studies + experience"]
+  B --> C["03 · Validate<br/>Experience + upstream PRs"]
   C --> D["04 · Connect<br/>Meeting + professional links"]
 
   classDef stage fill:#F5F7FF,stroke:#3367FF,color:#111827,stroke-width:2px;
@@ -71,7 +72,7 @@ flowchart LR
   linkStyle default stroke:#7C8DB5,stroke-width:2px;
 ```
 
-The homepage gives a concise overview, then guides visitors into detailed project and experience pages. Every deeper route keeps a clear next step toward live products, source code, or a direct conversation.
+The homepage gives a concise overview, then guides visitors toward detailed projects, work experience, and contributions. The Open Source page connects each summary to the upstream GitHub discussion.
 
 ## ⌘ Project map
 
@@ -91,8 +92,9 @@ jon-portfolio/
 │   ├── app.js                # Language, time theme, and preview animations
 │   ├── contact/index.html    # Meeting and contact directory
 │   ├── experience/index.html # Experience route
+│   ├── opensource/index.html # Upstream contributions
 │   ├── projects/index.html   # Project case-card route
-│   ├── index.html            # About, project grid, contributions, and next step
+│   ├── index.html            # About, three selected projects, and next step
 │   └── styles.css            # Layout and visual system
 ├── docs/
 │   └── readme-hero.svg       # Repository artwork
