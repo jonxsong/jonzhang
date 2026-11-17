@@ -5,12 +5,14 @@
 <p align="center">
   <a href="https://jonzhang.dev"><img alt="Live portfolio" src="https://img.shields.io/badge/VIEW_LIVE_PORTFOLIO-3367FF?style=for-the-badge&logo=safari&logoColor=white" /></a>
   <a href="https://omnigaze.jonzhang.dev"><img alt="Omnigaze" src="https://img.shields.io/badge/EXPLORE_OMNIGAZE-159D8F?style=for-the-badge&logo=googleearth&logoColor=white" /></a>
+  <a href="https://afterglow-sky-forecast.perkyaisle4.chatgpt.site/"><img alt="Afterglow" src="https://img.shields.io/badge/EXPLORE_AFTERGLOW-C8739A?style=for-the-badge&logo=icloud&logoColor=white" /></a>
   <a href="https://courtvision.jonzhang.dev"><img alt="CourtVision" src="https://img.shields.io/badge/EXPLORE_COURTVISION-0A2030?style=for-the-badge&logo=nba&logoColor=2DDEDA" /></a>
   <a href="https://orbit.jonzhang.dev"><img alt="Orbit" src="https://img.shields.io/badge/EXPLORE_ORBIT-08111F?style=for-the-badge&logo=expo&logoColor=9FC4FF" /></a>
   <a href="https://affinity.jonzhang.dev"><img alt="Affinity" src="https://img.shields.io/badge/EXPLORE_AFFINITY-0A211A?style=for-the-badge&logo=rust&logoColor=72EFB5" /></a>
   <a href="https://relay.jonzhang.dev"><img alt="Relay" src="https://img.shields.io/badge/EXPLORE_RELAY-15152D?style=for-the-badge&logo=go&logoColor=A89CFF" /></a>
   <a href="https://axion.jonzhang.dev"><img alt="Axion" src="https://img.shields.io/badge/EXPLORE_AXION-0A2640?style=for-the-badge&logo=rust&logoColor=7FD1FF" /></a>
   <a href="https://datacurrent.jonzhang.dev"><img alt="DataCurrent" src="https://img.shields.io/badge/EXPLORE_DATACURRENT-162738?style=for-the-badge&logo=postgresql&logoColor=6ED6DF" /></a>
+  <a href="https://frasi-jazz-studio.perkyaisle4.chatgpt.site/"><img alt="Frasi" src="https://img.shields.io/badge/EXPLORE_FRASI-563D7C?style=for-the-badge&logo=applemusic&logoColor=white" /></a>
 </p>
 
 <p align="center">
@@ -24,21 +26,21 @@
 
 <p align="center">
   A responsive, interactive portfolio for a <strong>GenAI / Full-Stack Engineer</strong><br />
-  building intelligent systems and turning ambitious ideas into real-world products.
+  engineering AI systems that turn complex information into useful decisions.
 </p>
 
 ---
 
 ## ✦ The experience
 
-This portfolio is designed as an editorial product, not a résumé pasted into one long webpage. The homepage introduces Jon, presents eight compact living project previews, and closes with an evidence-first proof panel. Dedicated routes give experience, projects, and contact room to breathe—all inside the existing time-reactive visual atmosphere.
+This portfolio is designed as an editorial product, not a résumé pasted into one long webpage. The homepage introduces Jon in depth, presents eight compact living project previews, and closes with evidence of activity plus a guided next step. Dedicated routes give experience, projects, and contact room to breathe—all inside the existing time-reactive visual atmosphere.
 
 | Chapter | What visitors can explore |
 | --- | --- |
-| **Homepage** | Portrait-led introduction, 3-column living-project index, and a concise proof-of-work record |
-| **Experience** | Editorial career timeline with quantified outcomes, restrained current-role copy, and education |
+| **Homepage** | Portrait-led About, eight living project previews, evidence of activity, and a guided next step |
+| **Experience** | Editorial career timeline with consistent impact callouts, technical highlights, and education |
 | **Projects** | Eight vertically arranged animated case cards using standardized Focus / Stack / Data / Systems / Status details |
-| **Contact** | Direct meeting, LinkedIn, GitHub, résumé, Instagram, and Facebook paths |
+| **Contact** | Meeting CTA plus an icon-led directory for LinkedIn, GitHub, résumé, Instagram, and Facebook |
 | **Language** | Instant English and Simplified Chinese views with the visitor’s preference remembered locally |
 | **Atmosphere** | A 24-hour interactive sky that shifts the page palette from sunrise through night |
 
@@ -56,38 +58,20 @@ This portfolio is designed as an editorial product, not a résumé pasted into o
 
 ## ⌁ Architecture
 
-<p align="center">
-  <img src="docs/architecture.svg" alt="Hand-drawn architecture diagram showing the browser, static portfolio, external links, public hosting, and GitHub repository" width="100%" />
-</p>
+The portfolio is structured to answer four questions in order: **Who is Jon? What does he build? Where has he created impact? How can I connect?**
 
-The committed `dist/` directory is the product. HTML owns the content and semantics, CSS provides the visual system and responsive behavior, and a small JavaScript layer powers the time theme and interactive sections. GitHub Actions publishes the exact committed output to GitHub Pages at `jonzhang.dev`.
+```mermaid
+flowchart LR
+  A["01 · Discover<br/>About + positioning"] --> B["02 · Explore<br/>Living project previews"]
+  B --> C["03 · Validate<br/>Case studies + experience"]
+  C --> D["04 · Connect<br/>Meeting + professional links"]
 
-```text
-Visitor
-   │
-   ▼
-Static portfolio ──────► Social profiles · Résumé · Live apps
-   │
-   ├── index.html      portrait, project index + proof
-   ├── experience/     career timeline + education
-   ├── projects/       full animated case cards
-   ├── contact/        meeting + professional links
-   ├── styles.css      visual system + responsive layout
-   └── app.js          language, time theme + interactions
-   │
-   ├──────────────► GitHub Pages · jonzhang.dev
-   └──────────────► GitHub source repository
+  classDef stage fill:#F5F7FF,stroke:#3367FF,color:#111827,stroke-width:2px;
+  class A,B,C,D stage;
+  linkStyle default stroke:#7C8DB5,stroke-width:2px;
 ```
 
-## ⚡ Run locally
-
-No install step is required. Serve the static output directly:
-
-```sh
-python -m http.server 4173 --directory dist
-```
-
-Then visit [http://localhost:4173](http://localhost:4173).
+The homepage gives a concise overview, then guides visitors into detailed project and experience pages. Every deeper route keeps a clear next step toward live products, source code, or a direct conversation.
 
 ## ⌘ Project map
 
@@ -104,14 +88,13 @@ jon-portfolio/
 │   │   ├── favicon.svg       # JZ. site mark
 │   │   ├── jon-portrait.png  # Homepage portrait
 │   │   └── logos/            # Company and university assets
-│   ├── app.js                # Theme and interaction logic
-│   ├── contact/index.html    # Contact route
+│   ├── app.js                # Language, time theme, and preview animations
+│   ├── contact/index.html    # Meeting and contact directory
 │   ├── experience/index.html # Experience route
 │   ├── projects/index.html   # Project case-card route
-│   ├── index.html            # Three-panel homepage
+│   ├── index.html            # About, project grid, evidence, and next step
 │   └── styles.css            # Layout and visual system
 ├── docs/
-│   ├── architecture.svg      # System map
 │   └── readme-hero.svg       # Repository artwork
 └── README.md
 ```
@@ -121,6 +104,7 @@ jon-portfolio/
 - **Portfolio:** [jonzhang.dev](https://jonzhang.dev)
 - **Omnigaze:** [omnigaze.jonzhang.dev](https://omnigaze.jonzhang.dev)
 - **Afterglow:** [afterglow-sky-forecast.perkyaisle4.chatgpt.site](https://afterglow-sky-forecast.perkyaisle4.chatgpt.site)
+- **Frasi:** [frasi-jazz-studio.perkyaisle4.chatgpt.site](https://frasi-jazz-studio.perkyaisle4.chatgpt.site) · [source](https://github.com/jonxsong/Frasi)
 - **CourtVision:** [courtvision.jonzhang.dev](https://courtvision.jonzhang.dev)
 - **Orbit:** [orbit.jonzhang.dev](https://orbit.jonzhang.dev)
 - **Affinity:** [affinity.jonzhang.dev](https://affinity.jonzhang.dev) · [source](https://github.com/jonxsong/Affinity)
