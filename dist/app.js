@@ -444,6 +444,7 @@ const translationsZh = {
   "View résumé ↗": "查看简历 ↗",
   "Instagram": "Instagram",
   "Life beyond the build.": "构建之外的生活。",
+  "Project updates and what I’m building.": "项目动态与我正在开发的作品。",
   "Facebook": "Facebook",
   "Connect and follow along.": "保持联系，关注近况。",
   "Available for thoughtful collaborations and conversations.": "期待有想法、有价值的合作与交流。"

@@ -41,7 +41,7 @@ The homepage introduces Jon and highlights three projects with animated previews
 | **Experience** | Editorial career timeline with consistent impact callouts, technical highlights, and education |
 | **Projects** | Eight vertically arranged animated case cards using standardized Focus / Stack / Data / Systems / Status details |
 | **[Open Source](https://jonzhang.dev/opensource/)** | Upstream pull requests with statuses and concise notes on the problem and proposed fix |
-| **Contact** | Meeting CTA plus an icon-led directory for LinkedIn, GitHub, résumé, Instagram, and Facebook |
+| **Contact** | Meeting CTA plus an icon-led directory for LinkedIn, GitHub, résumé, Instagram, X, and Facebook |
 | **Language** | Instant English and Simplified Chinese views with the visitor’s preference remembered locally |
 | **Atmosphere** | A 24-hour interactive sky that shifts the page palette from sunrise through night |
 
