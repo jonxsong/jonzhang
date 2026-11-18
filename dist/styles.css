@@ -319,6 +319,10 @@ body.night { --ink:#f5f7ff; --muted:#9aa7bc; --paper:#080c15; --panel:rgba(17,27
 .contribution-status::before { content:""; width:6px; height:6px; border:1px solid currentColor; border-radius:50%; }
 .contribution-issue,.contribution-change { max-width:76ch; margin:0; font-size:14px; line-height:1.6; }
 .contribution-change { margin-top:2px; }
+.contribution-toggle { display:flex; width:fit-content; min-height:44px; gap:10px; margin:22px auto 0; font-size:13px; font-weight:600; }
+.contribution-toggle[hidden] { display:none; }
+.contribution-toggle[aria-expanded="true"] svg { transform:rotate(180deg); }
+.contribution-toggle:focus-visible { outline:2px solid currentColor; outline-offset:3px; }
 
 .site-footer { min-height:150px; display:grid; grid-template-columns:1fr auto auto; gap:34px; align-items:center; color:var(--muted); font:500 9px "DM Mono",monospace; letter-spacing:.08em; }
 .site-footer>div { display:flex; flex-direction:column; gap:5px; }

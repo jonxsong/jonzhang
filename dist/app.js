@@ -369,6 +369,8 @@ const translationsZh = {
   "See open source contributions": "查看开源贡献",
   "OPEN PULL REQUESTS": "开放的拉取请求",
   "8 pull requests in 3 repositories": "3 个仓库 · 8 个拉取请求",
+  "View more": "查看更多",
+  "Show fewer": "收起",
   "Open": "开放",
   "Nov 2026": "2026 年 11 月",
   "The JSON Patch benchmark could reject valid answers based on formatting and accept invalid answers that contained the expected text.": "JSON Patch 基准测试可能因格式差异拒绝正确答案，也可能接受仅包含预期文本的无效答案。",
@@ -705,6 +707,31 @@ experienceEntries.forEach((entry) => {
     });
   });
 });
+
+const contributionToggle = document.querySelector(".contribution-toggle");
+if (contributionToggle) {
+  const contributionList = document.getElementById(contributionToggle.getAttribute("aria-controls"));
+  const extraContributions = Array.from(contributionList?.children ?? []).slice(3);
+  const collapsedLabel = contributionToggle.querySelector("[data-collapsed-label]");
+  const expandedLabel = contributionToggle.querySelector("[data-expanded-label]");
+
+  if (extraContributions.length && collapsedLabel && expandedLabel) {
+    function setContributionsExpanded(expanded) {
+      extraContributions.forEach((row) => { row.hidden = !expanded; });
+      contributionToggle.setAttribute("aria-expanded", String(expanded));
+      collapsedLabel.hidden = expanded;
+      expandedLabel.hidden = !expanded;
+    }
+
+    setContributionsExpanded(false);
+    contributionToggle.hidden = false;
+    contributionToggle.addEventListener("click", () => {
+      const expanded = contributionToggle.getAttribute("aria-expanded") !== "true";
+      setContributionsExpanded(expanded);
+      if (expanded) extraContributions[0].querySelector("a")?.focus();
+    });
+  }
+}
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
