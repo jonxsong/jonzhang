@@ -49,9 +49,25 @@
         <div class="contribution-group reveal">
           <div class="contribution-group-heading">
             <h3 id="open-prs-title">OPEN PULL REQUESTS</h3>
-            <span>12 pull requests in 5 repositories</span>
+            <span>14 pull requests in 6 repositories</span>
           </div>
           <ul class="contribution-list" id="open-pr-list" role="list">
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/cheaper-inference/OmniRoute/pull/21141" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>cheaper-inference/</span><strong>OmniRoute</strong></span> <span class="contribution-number">#21141</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-24">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">Compression profiles could truncate earlier tool results even when a request had not opted into lossy compression.</p>
+              <p class="contribution-change">Applies the request’s compression policy consistently so tool results stay intact unless lossy compression is enabled.</p>
+            </li>
+            <li class="contribution">
+              <div class="contribution-header">
+                <a class="contribution-link" href="https://github.com/cheaper-inference/OmniRoute/pull/21140" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>cheaper-inference/</span><strong>OmniRoute</strong></span> <span class="contribution-number">#21140</span></a>
+                <div class="contribution-meta"><span class="contribution-status">Open</span><time datetime="2026-11-24">Nov 2026</time></div>
+              </div>
+              <p class="contribution-issue">Cancelling a response could leave an upstream recovery stream running.</p>
+              <p class="contribution-change">Stops abandoned recovery streams, including ones that arrive after the response has been cancelled.</p>
+            </li>
             <li class="contribution">
               <div class="contribution-header">
                 <a class="contribution-link" href="https://github.com/github/github-mcp-server/pull/3893" target="_blank" rel="noreferrer"><span class="contribution-repo"><span>github/</span><strong>github-mcp-server</strong></span> <span class="contribution-number">#3893</span></a>
@@ -162,6 +178,6 @@
       <footer class="site-footer reveal"><div><strong>JON ZHANG</strong><span>GENAI × ENGINEERING × PRODUCT</span></div><nav aria-label="Footer navigation"><a href="/experience/">Experience</a><a href="/projects/">Projects</a><a href="/opensource/">Open Source</a><a href="/contact/">Contact</a></nav><span>© 2026</span></footer>
     </main>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="/app.js?v=20261118-1"></script>
+    <script src="/app.js?v=20261124-1"></script>
   </body>
 </html>
